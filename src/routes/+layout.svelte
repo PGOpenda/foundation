@@ -3,7 +3,11 @@
 </script>
 
 <header>
-
+    <nav class="navbar">
+        <img src="/Logo.svg" alt="">
+        <a href="/"> Home </a>
+        <a href="/"> About</a>
+    </nav>
 </header>
 
 <main>
@@ -13,3 +17,7 @@
 <footer>
 
 </footer>
+
+<style>
+    
+</style>
