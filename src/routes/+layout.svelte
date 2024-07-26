@@ -9,11 +9,11 @@
     <nav>
         <ul class="nav-links">
             <li><a href="/"> Home </a></li>
-            <li><a href="/"> Who We Are</a></li>
-            <li><a href="/"> About Liver Cancer</a></li>
-            <li><a href="/"> Get Involved</a></li>
-            <li><a href="/"> News & Updates</a></li>
-            <li><a href="/" class="contact-btn"> Contact Us</a></li>        
+            <li><a href="/about-us"> Who We Are</a></li>
+            <li><a href="/liver-cancer"> About Liver Cancer</a></li>
+            <li><a href="/get-involved"> Get Involved</a></li>
+            <li><a href="/news"> News & Updates</a></li>
+            <li><a href="/contact" class="contact-btn"> Contact Us</a></li>        
         </ul>
         
     </nav>
@@ -42,8 +42,8 @@
             <p>&copy;2024 Copyright Liver Care Foundation. All Rights Reserved </p>
         </div>
         <div>
-            <a href="/">Terms of Service</a>
-            <a href="/">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+            <a href="/privacy-policy">Privacy Policy</a>
         </div>
     </div>
 </footer>
