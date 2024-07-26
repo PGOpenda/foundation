@@ -6,13 +6,16 @@
     <a href="/">
         <img src="/Logo.svg" alt="Liver Care Foundation">  
     </a>
-    <nav class="navlinks">
-        <a href="/"> Home </a>
-        <a href="/"> Who We Are</a>
-        <a href="/"> About Liver Cancer</a>
-        <a href="/"> Get Involved</a>
-        <a href="/"> News & Updates</a>
-        <a href="/" class="contact-btn"> Contact Us</a>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/"> Home </a></li>
+            <li><a href="/"> Who We Are</a></li>
+            <li><a href="/"> About Liver Cancer</a></li>
+            <li><a href="/"> Get Involved</a></li>
+            <li><a href="/"> News & Updates</a></li>
+            <li><a href="/" class="contact-btn"> Contact Us</a></li>        
+        </ul>
+        
     </nav>
 </header>
 
@@ -26,9 +29,6 @@
             <a href="/">
                 <img src="/Logo-2.svg" alt="Liver Care Foundation">
             </a>
-            <h3>
-                Liver Care Foundation
-            </h3>
         </div>
         <div>
             <h2>
@@ -39,7 +39,7 @@
     </div>
     <div class="footer-end">
         <div>
-            <p>2024 Copyright Liver Care Foundation. All Rights Reserved </p>
+            <p>&copy;2024 Copyright Liver Care Foundation. All Rights Reserved </p>
         </div>
         <div>
             <a href="/">Terms of Service</a>
@@ -52,8 +52,7 @@
     header {
         display: flex;
         justify-content: space-between;
-        padding: 0% 2.5%;
-        background-color: #fff7fa;
+        padding: 0% 40px;
     }
 
     nav {
@@ -61,10 +60,17 @@
         margin-bottom: auto;
     }
 
+    .nav-links {
+        display: flex; 
+        list-style: none;       
+    }
+
+    .nav-links li{
+        padding: 0px 15px;
+    }
+
     nav a{
-        text-decoration: none;
         font-size: 1em;
-        padding-right: 2em;
         font-weight: 500;
         color: #000;
         text-align: center;
@@ -73,6 +79,7 @@
     nav a:hover {
         color: #ff347d;
         transition: 500ms;
+        border-bottom: 1px solid #ff347d;
         
     }
 
@@ -91,19 +98,11 @@
         transition: 500ms;
     }
 
-    footer{
-        background-color: #fff7fa;
-    }
-    
     .footer-links{
         display: flex;
         justify-content: space-between;
-        padding: 50px;
+        padding: 50px 90px;
         text-align: center;
-    }
-
-    .footer-links h3{
-        font-weight: 400;
     }
 
     .footer-links h2{
@@ -118,7 +117,7 @@
         display: flex;
         justify-content: space-between;
         background-color: #9d0063;
-        padding: 15px;
+        padding: 13px 40px;
         color: #fff;
         font-size: 14px;
         font-weight: 500;
