@@ -15,7 +15,6 @@
             <li><a href="/news"> News & Updates</a></li>
             <li><a href="/contact" class="contact-btn"> Contact Us</a></li>        
         </ul>
-        
     </nav>
 </header>
 

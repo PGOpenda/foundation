@@ -4,8 +4,7 @@
         <h1>
             Fighting Liver Cancer Together: Hope, Research, Support
         </h1>
-
-        <a href="/"> Learn About Liver Cancer</a>
+        <a href="/liver-cancer"> Learn About Liver Cancer</a>
     </div>
     
     <h2> An image is placed here!!</h2>
@@ -25,7 +24,30 @@
 </div>
 
 <div class="imgs">
-    
+    <!-- <img src="" alt="image 1">
+    <img src="" alt="image 2">
+    <img src="" alt="image 4"> -->
+</div>
+
+<div class="info">
+    <h1>
+        Resources and Information on Liver Cancer
+    </h1>
+
+    <p>
+        Around 800,000 individuals worldwide receive a diagnosis of this illness every year. 
+        With over 700,000 deaths from the disease each year, liver cancer is also one of the 
+        main causes of cancer-related mortality globally. We’re here with answers, guidance, and support.
+    </p>
+
+    <div class="info-cards">
+        <ul>
+            <li><a href="/">Understading Liver Cancer </a></li>
+            <li><a href="/">Managing Liver Cancer</a></li>
+            <li><a href="/">FInd Support & Resources</a></li>
+            <li><a href="/">Prevention Measures</a></li>
+        </ul>
+    </div>
 </div>
 
 
@@ -81,4 +103,48 @@
     .hero-2 span{
         color:#9d0063;
     }
+
+    .imgs{
+        display: flex;
+        justify-content: center;
+        padding: 90px 100px;
+        background-color: #fff;
+        /* background: url(/background.svg); */
+        background-size: cover;
+    }
+
+    .info{
+        padding: 50px 100px;
+        /* text-align: center; */
+        /* align-items: end; */
+    }
+
+    .info h1{
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 2.3em;
+    }
+
+    .info p{
+        margin-bottom: 15px;   
+    }
+
+    .info-cards ul {
+        display: flex;
+        width: 100%;
+        list-style: none;
+    }
+
+    .info-cards li {
+        margin-right: 25px;
+        border: 1px solid #9d0063;
+        padding: 10px;
+        background-color: #9d0063;
+    }
+
+    .info-cards li a{
+        font-weight: 500;
+        color: #fff;
+    }
+
 </style>
