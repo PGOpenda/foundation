@@ -25,7 +25,6 @@
     <h2>
         Our mission: To advance the understanding, prevention, and treatment of liver cancer.
     </h2>
-
     <p> 
         We aim to provide patients and their families with the necessary resources and support to navigate their journey,
         while fostering a community of hope and resilience. Through innovative research, public education, and compassionate care,
@@ -39,20 +38,58 @@
         Our Core Values
     </h2>
     <div class="cards">
-        <div style="background-color: aqua;">
-            <p>journey</p>
+        <div class = 'card'>
+            <h3>
+                Innovation <br>
+                <span class="material-symbols-outlined">
+                lightbulb
+                </span>
+            </h3>
         </div>
 
-        <div style="background-color:black;">
-            <p>journey</p>
+        <div class = 'card'>
+            <h3>
+                Compassion <br>
+                <span class="material-symbols-outlined">
+                    favorite
+                </span>
+            </h3>
         </div>
 
-        <div style="background-color:blue;">
-            <p>journey</p>
+        <div class = 'card'>
+            <h3>
+                Collaboration <br>
+                <span class="material-symbols-outlined">
+                    handshake
+                </span>
+            </h3>
         </div> 
 
-        <div>
-            journey
+        <div class = 'card'>
+            <h3>
+                Integrity <br>
+                <span class="material-symbols-outlined">
+                    verified
+                </span>
+            </h3>
+        </div>
+
+        <div class = 'card'>
+             <h3>
+                Empowerment <br>
+                <span class="material-symbols-outlined">
+                    groups
+                </span>
+            </h3>   
+        </div>
+
+        <div class = 'card'>
+            <h3> 
+                Dedication <br>
+                <span class="material-symbols-outlined">
+                    psychology
+                </span>
+            </h3>
         </div>
     </div>
 </div>
@@ -99,7 +136,7 @@
     }
 
     .about-info p{
-        margin-bottom: 90px;
+        margin-bottom: 70px;
         text-align: left;
     }
 
@@ -115,11 +152,36 @@
 
     .cards{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr; 
+        align-items: center;
         width: 100%;
-        padding: 30px;
+        padding: 20px;
+        margin-left: 30px;
     }
 
+    .card {
+        width: 80%;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: #9d0063;
+        color: #fff;
+    }
 
+    .card:hover {
+        background-color: #ff347d;
+        color: black;
+        transition: 500ms;
+    }
+
+    .card h3{
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+
+    .card span{
+        margin-top: 10px;
+        font-size: 2em;
+    }
 
 </style>
