@@ -104,10 +104,6 @@
         text-align: center;
     }
 
-    .footer-links h2{
-        font-weight: 400;
-    }
-
     .footer-links div{
         max-width: 400px;
     }

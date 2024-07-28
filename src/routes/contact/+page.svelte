@@ -2,6 +2,9 @@
     <h1>Here to <span>help</span></h1>
     <div class="contact-form">
         <form>
+            <h2>
+                Send us a message
+            </h2>
             <label for="subject">Subject:</label><br>
             <input type="text" id="subject" name="subject" required><br>
             <label for="email">Email:</label><br>
@@ -12,7 +15,7 @@
         </form>
 
         <div class="contact-info">
-            <h2>Or Contact Us At:</h2>
+            <h2>Or contact us at</h2>
             <h3>Email: </h3>
             <p>example@email.com</p>
             <h3>Telephone: </h3>
@@ -24,12 +27,11 @@
 <style>
     .contact {
         padding: 50px 100px;
-        height: 95vh;
+        /* height: 100vh; */
         
     }
 
     .contact h1 {
-        font-weight: 400;
         font-size: 3.3em;
         text-align: center;
     }
@@ -68,6 +70,11 @@
         font-size: 1em;
     }
 
+    .contact-form form h2{
+        font-size: 2.2em;
+        margin-bottom: 15px;
+    }
+
     .contact-form .submit{
         align-items: baseline;
         width: fit-content;
@@ -93,13 +100,11 @@
     }
 
     .contact-info h2{
-        font-weight: 400;
         font-size: 2.5em;
         margin-bottom: 20px;
     }
 
     .contact-info h3{
-        font-weight: 400;
         font-size: 1.5em;
         margin-bottom: 5px;
     }

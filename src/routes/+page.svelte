@@ -96,7 +96,6 @@
 
     .hero-2 h1{
         font-size: 2.9em;
-        font-weight: 400;
         margin-bottom: 10px;
     }
 
@@ -121,7 +120,6 @@
 
     .info h1{
         margin-bottom: 15px;
-        font-weight: 400;
         font-size: 2.3em;
     }
 

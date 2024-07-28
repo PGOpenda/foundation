@@ -34,9 +34,12 @@
 
 
 <div class="about-cards">
-    <h2>
-        Our Core Values
-    </h2>
+    <div>
+        <h2>
+            Our Core Values
+        </h2>
+    </div>
+
     <div class="cards">
         <div class = 'card'>
             <h3>
@@ -101,10 +104,6 @@
         padding: 70px 100px;
     }
 
-    .about-heading h3, .about-heading h1 {
-        font-weight: 400;
-    }
-
     .about-heading h3{
         font-size: 1.8em;
         margin-bottom: 10px;
@@ -130,7 +129,6 @@
 
     .about-info h2{
         color: #9d0063;
-        font-weight: 400;
         font-size: 2.2em;
         margin-bottom: 25px;
     }
@@ -147,7 +145,6 @@
 
     .about-cards h2{
         font-size: 2.2em;
-        font-weight: 400;  
     }
 
     .cards{
@@ -176,10 +173,9 @@
 
     .card h3{
         font-size: 1.3em;
-        font-weight: 400;
     }
 
-    .card span{
+    .card span {
         margin-top: 10px;
         font-size: 2em;
     }
