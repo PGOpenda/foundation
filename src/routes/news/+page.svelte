@@ -1,3 +1,8 @@
+<script>
+    import news from '$lib/assets/news.jpg'
+
+</script>
+
 <div class="heading">
     <div>
         <h1>
@@ -5,9 +10,7 @@
         </h1>
     </div>
     
-    <div>
-        <p>An image goes here</p>
-    </div>
+   <img src="{news}" alt="">
 
 </div>  
 
@@ -26,6 +29,12 @@
 
     .heading h1{
         font-size: 3.3em;
+        padding: 80px 0;
+    }
+
+    .heading img{
+        height: 350px;
+        border-radius: 120px 20px 120px 20px;
     }
 
     .blogs{

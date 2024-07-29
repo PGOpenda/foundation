@@ -1,44 +1,45 @@
 <script>
-import FAQ from '$lib/FAQ.svelte';
 
-let faqs = [
-        {
-            question: 'What are the risk factors for liver cancer?',
-            answer: 'Risk factors for liver cancer include chronic infection with hepatitis B or C, cirrhosis, certain inherited liver diseases, diabetes, fatty liver disease, excessive alcohol consumption, and exposure to aflatoxins.'
-        },
-        {
-            question: 'What are the symptoms of liver cancer?',
-            answer: 'Early-stage liver cancer often does not cause symptoms. As the disease progresses, symptoms may include weight loss, loss of appetite, upper abdominal pain, nausea and vomiting, general weakness and fatigue, an enlarged liver, and yellowing of the skin and eyes (jaundice).'
-        },
-        {
-            question: 'How is liver cancer diagnosed?',
-            answer: 'Liver cancer is diagnosed through a combination of physical exams, blood tests, imaging tests (such as ultrasound, CT scan, and MRI), and sometimes a liver biopsy.'
-        },
-        {
-            question: 'What are the treatment options for liver cancer?',
-            answer: 'Treatment options for liver cancer depend on the stage and type of cancer and the overall health of the patient. They may include surgery, liver transplantation, ablation therapy, embolization, targeted therapy, immunotherapy, and radiation therapy.'
-        },
-        {
-            question: 'Can liver cancer be prevented?',
-            answer: 'While not all liver cancers can be prevented, the risk can be reduced by avoiding risk factors. Preventive measures include getting vaccinated against hepatitis B, reducing alcohol consumption, maintaining a healthy weight, managing diabetes, and avoiding exposure to aflatoxins.'
-        },
-        {
-            question: 'How can I support someone with liver cancer?',
-            answer: 'Supporting someone with liver cancer involves providing emotional support, helping with daily activities, accompanying them to medical appointments, and encouraging them to follow their treatment plan. Being a good listener and offering practical help can make a significant difference.'
-        },
-        {
-            question: 'How can I get involved with the Liver Care Foundation?',
-            answer: 'You can get involved with the Liver Care Foundation by donating, volunteering, participating in our events, and spreading awareness about liver cancer. Visit our "Get Involved" page for more information.'
-        },
-        {
-            question: 'What should I do if I think I have symptoms of liver cancer?',
-            answer: 'If you experience symptoms of liver cancer, it is crucial to seek medical advice immediately. Contact your healthcare provider for an evaluation and appropriate diagnostic tests. Early detection and treatment can improve outcomes.'
-        }
-];
+    import FAQ from '$lib/FAQ.svelte';
+    import hero_pic from '$lib/assets/hero-pic.jpg';
+    import img_car_1 from '$lib/assets/img-car-1.jpg'
+    import img_car_2 from '$lib/assets/img-car-2.jpg'
+    import img_car_3 from '$lib/assets/img-car-3.jpg'
 
-
-
-
+    let faqs = [
+            {
+                question: 'What are the risk factors for liver cancer?',
+                answer: 'Risk factors for liver cancer include chronic infection with hepatitis B or C, cirrhosis, certain inherited liver diseases, diabetes, fatty liver disease, excessive alcohol consumption, and exposure to aflatoxins.'
+            },
+            {
+                question: 'What are the symptoms of liver cancer?',
+                answer: 'Early-stage liver cancer often does not cause symptoms. As the disease progresses, symptoms may include weight loss, loss of appetite, upper abdominal pain, nausea and vomiting, general weakness and fatigue, an enlarged liver, and yellowing of the skin and eyes (jaundice).'
+            },
+            {
+                question: 'How is liver cancer diagnosed?',
+                answer: 'Liver cancer is diagnosed through a combination of physical exams, blood tests, imaging tests (such as ultrasound, CT scan, and MRI), and sometimes a liver biopsy.'
+            },
+            {
+                question: 'What are the treatment options for liver cancer?',
+                answer: 'Treatment options for liver cancer depend on the stage and type of cancer and the overall health of the patient. They may include surgery, liver transplantation, ablation therapy, embolization, targeted therapy, immunotherapy, and radiation therapy.'
+            },
+            {
+                question: 'Can liver cancer be prevented?',
+                answer: 'While not all liver cancers can be prevented, the risk can be reduced by avoiding risk factors. Preventive measures include getting vaccinated against hepatitis B, reducing alcohol consumption, maintaining a healthy weight, managing diabetes, and avoiding exposure to aflatoxins.'
+            },
+            {
+                question: 'How can I support someone with liver cancer?',
+                answer: 'Supporting someone with liver cancer involves providing emotional support, helping with daily activities, accompanying them to medical appointments, and encouraging them to follow their treatment plan. Being a good listener and offering practical help can make a significant difference.'
+            },
+            {
+                question: 'How can I get involved with the Liver Care Foundation?',
+                answer: 'You can get involved with the Liver Care Foundation by donating, volunteering, participating in our events, and spreading awareness about liver cancer. Visit our "Get Involved" page for more information.'
+            },
+            {
+                question: 'What should I do if I think I have symptoms of liver cancer?',
+                answer: 'If you experience symptoms of liver cancer, it is crucial to seek medical advice immediately. Contact your healthcare provider for an evaluation and appropriate diagnostic tests. Early detection and treatment can improve outcomes.'
+            }
+    ];
 </script>
 
 
@@ -50,7 +51,7 @@ let faqs = [
         <a href="/liver-cancer"> Learn About Liver Cancer</a>
     </div>
     
-    <h2> An image is placed here!!</h2>
+    <img src="{hero_pic}" alt="old man with his daughter">
 
 </div>
 
@@ -67,9 +68,9 @@ let faqs = [
 </div>
 
 <div class="imgs">
-    <!-- <img src="" alt="image 1">
-    <img src="" alt="image 2">
-    <img src="" alt="image 4"> -->
+    <img src="{img_car_1}" alt="">
+    <img src="{img_car_2}" alt="">
+    <img src="{img_car_3}" alt="">
 </div>
 
 <div class="info">
@@ -98,7 +99,7 @@ let faqs = [
 <style>
     .hero {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         padding: 50px 100px;
     }
 
@@ -122,7 +123,12 @@ let faqs = [
         border: 1px solid #ff347d;
         color: black;
         transition: 500ms;
-    }   
+    }
+    
+    .hero img {
+        height: 350px;
+        border-radius: 120px 20px 120px 20px;
+    }
 
     .hero-2{
         padding: 50px 100px;
@@ -150,10 +156,16 @@ let faqs = [
     .imgs{
         display: flex;
         justify-content: center;
-        padding: 90px 100px;
+        padding: 70px 100px;
         background-color: #fff;
         /* background: url(/background.svg); */
         background-size: cover;
+    }
+
+    .imgs img{
+        height: 210px;
+        padding: 0px 5px;
+        border-radius: 120px 20px 120px 20px;
     }
 
     .info{
