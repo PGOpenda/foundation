@@ -26,9 +26,8 @@
 
 <style>
     .contact {
-        padding: 50px 100px;
+        padding: 60px 100px;
         /* height: 100vh; */
-        
     }
 
     .contact h1 {

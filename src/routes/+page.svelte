@@ -1,3 +1,46 @@
+<script>
+import FAQ from '$lib/FAQ.svelte';
+
+let faqs = [
+        {
+            question: 'What are the risk factors for liver cancer?',
+            answer: 'Risk factors for liver cancer include chronic infection with hepatitis B or C, cirrhosis, certain inherited liver diseases, diabetes, fatty liver disease, excessive alcohol consumption, and exposure to aflatoxins.'
+        },
+        {
+            question: 'What are the symptoms of liver cancer?',
+            answer: 'Early-stage liver cancer often does not cause symptoms. As the disease progresses, symptoms may include weight loss, loss of appetite, upper abdominal pain, nausea and vomiting, general weakness and fatigue, an enlarged liver, and yellowing of the skin and eyes (jaundice).'
+        },
+        {
+            question: 'How is liver cancer diagnosed?',
+            answer: 'Liver cancer is diagnosed through a combination of physical exams, blood tests, imaging tests (such as ultrasound, CT scan, and MRI), and sometimes a liver biopsy.'
+        },
+        {
+            question: 'What are the treatment options for liver cancer?',
+            answer: 'Treatment options for liver cancer depend on the stage and type of cancer and the overall health of the patient. They may include surgery, liver transplantation, ablation therapy, embolization, targeted therapy, immunotherapy, and radiation therapy.'
+        },
+        {
+            question: 'Can liver cancer be prevented?',
+            answer: 'While not all liver cancers can be prevented, the risk can be reduced by avoiding risk factors. Preventive measures include getting vaccinated against hepatitis B, reducing alcohol consumption, maintaining a healthy weight, managing diabetes, and avoiding exposure to aflatoxins.'
+        },
+        {
+            question: 'How can I support someone with liver cancer?',
+            answer: 'Supporting someone with liver cancer involves providing emotional support, helping with daily activities, accompanying them to medical appointments, and encouraging them to follow their treatment plan. Being a good listener and offering practical help can make a significant difference.'
+        },
+        {
+            question: 'How can I get involved with the Liver Care Foundation?',
+            answer: 'You can get involved with the Liver Care Foundation by donating, volunteering, participating in our events, and spreading awareness about liver cancer. Visit our "Get Involved" page for more information.'
+        },
+        {
+            question: 'What should I do if I think I have symptoms of liver cancer?',
+            answer: 'If you experience symptoms of liver cancer, it is crucial to seek medical advice immediately. Contact your healthcare provider for an evaluation and appropriate diagnostic tests. Early detection and treatment can improve outcomes.'
+        }
+];
+
+
+
+
+</script>
+
 
 <div class="hero">
     <div>
@@ -50,6 +93,7 @@
     </div>
 </div>
 
+<FAQ {faqs} />
 
 <style>
     .hero {
@@ -78,7 +122,7 @@
         border: 1px solid #ff347d;
         color: black;
         transition: 500ms;
-    }
+    }   
 
     .hero-2{
         padding: 50px 100px;
@@ -95,7 +139,7 @@
     }
 
     .hero-2 h1{
-        font-size: 2.9em;
+        font-size: 3em;
         margin-bottom: 10px;
     }
 

@@ -25,15 +25,22 @@
 <footer>
     <div class="footer-links">
         <div>
+            <h3>
+                Liver Care Foundation&copy;
+            </h3>
+        </div>
+        <div>
             <a href="/">
                 <img src="/Logo-2.svg" alt="Liver Care Foundation">
             </a>
         </div>
         <div>
-            <h2>
-                Improving the lives  of individuals affected by liver cancer through research,
-                education, advocacy, and support.
-            </h2>
+            <p>
+                Don't feel shy, reach out <br><br>
+                <a href="/contact" class="contact-btn">Drop a message</a>
+                <!-- Improving the lives  of individuals affected by liver cancer through research,
+                education, advocacy, and support. -->
+            </p>
         </div>
     </div>
     <div class="footer-end">
@@ -95,24 +102,32 @@
         border: 1px solid #ff347d;
         color: black;
         transition: 500ms;
-    }
+    } 
 
     .footer-links{
-        display: flex;
-        justify-content: space-between;
-        padding: 50px 90px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
+        width: 90%;
+        padding: 10px 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
     }
 
-    .footer-links div{
-        max-width: 400px;
+    .footer-links h3 {
+        padding-top: 40px;
+    }
+
+    .footer-links p{
+        padding-top: 10px;
     }
 
     .footer-end{
         display: flex;
         justify-content: space-between;
         background-color: #9d0063;
-        padding: 13px 40px;
+        padding: 10px 40px;
         color: #fff;
         font-size: 14px;
         font-weight: 500;
