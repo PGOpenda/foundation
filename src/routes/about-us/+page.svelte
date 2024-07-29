@@ -1,3 +1,7 @@
+<script>
+    import who from '$lib/assets/who-we-are.jpg'
+</script>
+
 <div class="about-heading">
     <div>
         <h3>
@@ -7,9 +11,7 @@
             Liver Care <br>Foundation
         </h1>
     </div>
-    <div>
-        <p>An image goes here!!</p>
-    </div>
+        <img src="{who}" alt="people holding hands">
 </div>
 
 <div class="about-info">
@@ -100,17 +102,22 @@
 <style>
     .about-heading{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         padding: 70px 100px;
     }
 
     .about-heading h3{
         font-size: 1.8em;
-        margin-bottom: 10px;
+        padding: 20px 0;
     }
 
     .about-heading h1{
         font-size: 3.3em;
+    }
+
+    .about-heading img{
+        height: 350px;
+        border-radius: 120px 20px 120px 20px;
     }
 
     .about-info{

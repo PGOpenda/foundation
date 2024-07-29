@@ -1,10 +1,12 @@
+<script>
+    import liver_cancer_header from '$lib/assets/liver-cancer.jpg';
+</script>
+
 <div class="header">
     <div>
         <h1> Liver Cancer </h1>
     </div>
-    <div>
-        <p>An image goes here!!</p>
-    </div>
+    <img src="{liver_cancer_header}" alt="">
 </div>
 
 <div class="info">
@@ -211,6 +213,12 @@
 
     .header h1{
         font-size: 3.3em;
+        padding: 80px 0;
+    }
+
+    .header img{
+        height: 350px;
+        border-radius: 120px 20px 120px 20px;
     }
 
     .info{
