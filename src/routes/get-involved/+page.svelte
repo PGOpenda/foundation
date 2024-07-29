@@ -11,7 +11,7 @@
         </h1>
     </div>
 
-    <img src="{get_involved}" alt="">
+    <img src="{get_involved}" alt="People volunteering">
 </div>
 
 <div class="info">
@@ -27,7 +27,7 @@
             </p>
 
         </div>
-        <img src="{donate}" alt="">
+        <img src="{donate}" alt="A jar with donation money">
     </div>
     
 </div>
@@ -35,7 +35,7 @@
 <div class="info">
 
     <div class="info-grid">
-        <img src="{volunteer}" alt="">
+        <img src="{volunteer}" alt="A volunteer">
         <div>
               <h2>
                 <span>Volunteer</span>

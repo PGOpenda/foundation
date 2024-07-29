@@ -10,7 +10,7 @@
         </h1>
     </div>
     
-   <img src="{news}" alt="">
+   <img src="{news}" alt="A stack of newspapers">
 
 </div>  
 
