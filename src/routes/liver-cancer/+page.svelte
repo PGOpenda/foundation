@@ -6,7 +6,7 @@
     <div>
         <h1> Liver Cancer </h1>
     </div>
-    <img src="{liver_cancer_header}" alt="">
+    <img src="{liver_cancer_header}" alt="a patient with a nurse">
 </div>
 
 <div class="info">

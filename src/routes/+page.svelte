@@ -68,9 +68,9 @@
 </div>
 
 <div class="imgs">
-    <img src="{img_car_1}" alt="">
-    <img src="{img_car_2}" alt="">
-    <img src="{img_car_3}" alt="">
+    <img src="{img_car_1}" alt="a family taking a selfie together">
+    <img src="{img_car_2}" alt="a patient getting instructinos from a nurse">
+    <img src="{img_car_3}" alt="a father with his daughter smiling">
 </div>
 
 <div class="info">
