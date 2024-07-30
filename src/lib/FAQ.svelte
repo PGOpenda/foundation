@@ -18,7 +18,7 @@
         }   
     }
 
-  </script>
+</script>
   
 <div class="faq-container">
     <h1>Frequently Asked Questions</h1>

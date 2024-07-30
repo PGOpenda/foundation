@@ -1,5 +1,12 @@
 <script>
     import liver_cancer_header from '$lib/assets/liver-cancer.jpg';
+    import liver_cancer_illustration from '$lib/assets/liver-cancer-illustration.jpg'
+    import general_consideration from '$lib/assets/general-consideration.jpg'
+    import hepatocellular_carcinoma from '$lib/assets/hepatocellula-carcinoma.jpg'
+    import intrahepatic_cholangiocarcinoma from "$lib/assets/Intrahepatic-cholangiocarcinoma.jpg"
+    import hepatoblastoma from '$lib/assets/Hepatoblastoma.jpg'
+    import angiosarcoma_hemangiosarcoma from '$lib/assets/Angiosarcoma-hemangiosarcoma.jpg'
+    import { smoothScroll } from '$lib/smoothScroll';
 </script>
 
 <div class="header">
@@ -13,25 +20,29 @@
 
     <div class="nav">
         <ul>
-            <li><a href="/">About Liver Cancer</a></li>
-            <li><a href="/">Signs & Symptoms</a></li>
-            <li><a href="/">Risk factors and prevention</a></li>
-            <li><a href="/">Treatment Options</a></li>
-            <li><a href="/">Treatment Options</a></li>
-            <li></li>
+            <li><a href="#liver-info" use:smoothScroll>About Liver Cancer</a></li>
+            <li><a href="#causes" use:smoothScroll>Causes of Liver Cancer</a></li>
+            <li><a href="#treatment" use:smoothScroll>Treatment Options</a></li>
+            <li><a href="#analysis" use:smoothScroll>Analysis</a></li>
+            <li><a href="#disclaimer" use:smoothScroll>Disclaimer</a></li>
         </ul>
     </div>
 
-    <div class="liver-info">
-        <h2>
-           What is liver cancer?
-        </h2>
-        <p> 
-            Liver cancer (also known as hepatic cancer, primary hepatic cancer, or primary hepatic malignancy) is a type of cancer 
-            that begins in the liver. Liver cancer can be primary, meaning it begins in the liver. Hepatic metastasis, or secondary,
-            meaning it travels from another part of the body to the liver. Of the two types of liver cancer, liver metastasis is the 
-            most common. 
-        </p>
+    <div class="liver-info" id="liver-info">
+        <div class="what-is-liver-cancer">
+            <div>
+                <h2>
+                    What is liver cancer?
+                 </h2>
+                 <p> 
+                     Liver cancer (also known as hepatic cancer, primary hepatic cancer, or primary hepatic malignancy) is a type of cancer 
+                     that begins in the liver. Liver cancer can be primary, meaning it begins in the liver. Hepatic metastasis, or secondary,
+                     meaning it travels from another part of the body to the liver. Of the two types of liver cancer, liver metastasis is the 
+                     most common. 
+                 </p>
+            </div>
+            <img src="{liver_cancer_illustration}" alt="Liver Cancer Illustration" height="250">
+        </div>
 
         <h2>Classifications of Liver Cancer</h2>
         <p>
@@ -72,7 +83,7 @@
 
 </div>
 
-<div class="causes">
+<div class="causes" id="causes">
     <h2>
         Causes of Liver Cancer
     </h2>
@@ -105,7 +116,7 @@
     </div>
 </div>
 
-<div class="treatment">
+<div class="treatment" id="treatment">
     <div>
         <h2>Treatment for liver cancer</h2>
         <p>
@@ -114,89 +125,114 @@
     </div>
 
     <div>
-        <h3>
-            General Consideration:
-        </h3>
+        <div class="treatment-info">
+            <div>
+                <h3>
+                    General Consideration:
+                </h3>
+        
+                <p>
+                    Treatment for liver cancer varies according to its particular form and stage, just like with many other malignancies. 
+                    The TNM staging systems serve as the primary basis for cancer staging. Additionally, there are staging systems tailored 
+                    to liver cancer, and each one provides therapeutic options that could lead to a cure or prevention of cancer recurrence. <br> <br>
+                    Surgery, medicine, and ablation techniques are used as treatments. For liver cancer, numerous chemotherapy medications are also approved.
+                </p>
+            </div>
+            <img src="{general_consideration}" alt="Doctor speaking to a patient" height="250">
+        </div> 
 
-        <p>
-            Treatment for liver cancer varies according to its particular form and stage, just like with many other malignancies. 
-            The TNM staging systems serve as the primary basis for cancer staging. Additionally, there are staging systems tailored 
-            to liver cancer, and each one provides therapeutic options that could lead to a cure or prevention of cancer recurrence. <br> <br>
-            Surgery, medicine, and ablation techniques are used as treatments. For liver cancer, numerous chemotherapy medications are also approved.
-        </p>
+        <div class="treatment-info">
+            <img src="{hepatocellular_carcinoma}" alt = "Patient undergoing chemotherapy" height = "250">
+            <div>
+                <h3>
+                    Hepatocellular carcinoma
+                </h3>
+        
+                <p>
+                    For individuals with sufficient hepatic function reserve, the recommended treatment for hepatocellular carcinoma 
+                    (HCC) is partial surgical resection. Recurrence rates following excision, however, can surpass 70%, whether as a 
+                    result of the original tumor spreading or developing new tumors. <br> <br>
+                    When a patient has HCC and the tumor satisfies certain requirements, liver transplantation may also be an option 
+                    (such as the Milan criteria). <br> <br>
+                    The only non-surgical treatment that can provide a cure is percutaneous ablation. Percutaneous ablation can take 
+                    many different forms. It can involve injecting substances like ethanol or acetic acid into the liver or employing 
+                    radio frequency ablation, microwaves, lasers, or cryotherapy to produce dramatic temperature changes. <br> <br>
+                    Despite the possibility of using local chemotherapy during a process called transarterial chemoembolization (TACE), 
+                    systemic chemotherapy is not frequently employed in HCC. Treatment involves applying medications to the tumor that 
+                    stop blood flow and destroy cancer cells.
+                </p>
+            </div>
+            
+        </div>
 
-        <h3>
-            Hepatocellular carcinoma
-        </h3>
-
-        <p>
-            For individuals with sufficient hepatic function reserve, the recommended treatment for hepatocellular carcinoma 
-            (HCC) is partial surgical resection. Recurrence rates following excision, however, can surpass 70%, whether as a 
-            result of the original tumor spreading or developing new tumors. <br> <br>
-            When a patient has HCC and the tumor satisfies certain requirements, liver transplantation may also be an option 
-            (such as the Milan criteria). <br> <br>
-            The only non-surgical treatment that can provide a cure is percutaneous ablation. Percutaneous ablation can take 
-            many different forms. It can involve injecting substances like ethanol or acetic acid into the liver or employing 
-            radio frequency ablation, microwaves, lasers, or cryotherapy to produce dramatic temperature changes. <br> <br>
-            Despite the possibility of using local chemotherapy during a process called transarterial chemoembolization (TACE), 
-            systemic chemotherapy is not frequently employed in HCC. Treatment involves applying medications to the tumor that 
-            stop blood flow and destroy cancer cells.
-        </p>
-
-        <h3>
-            Intrahepatic cholangiocarcinoma
-        </h3>
-        <p>
-            Although resection is a possibility for cholangiocarcinoma, less than 30% of cases are treatable at the time of 
-            diagnosis. Many intrahepatic cholangiocarcinomas have many focal tumors within the liver, which makes surgical removal 
-            of the bulk of these tumors impossible. Following surgery, up to 60% of cases return. <br> <br>
-            In situations when partial resection is not a possibility, liver transplantation may be utilized; in other cases, 
-            adjuvant chemotherapy and radiation may be beneficial. <br> <br>
-            Since the perihilar area is where 60% of cholangiocarcinomas originate, photodynamic therapy can prolong survival and 
-            enhance quality of life in these incurable cases. A new kind of treatment called photodynamic therapy targets the tumor 
-            by using chemicals that are activated by light. <br> <br>
-            Cholangiocarcinoma instances that are incurable may occasionally be treated with systemic chemotherapy, such as gemcitabine
-             and cisplatin.
-        </p>
-
-        <h3>
-            Hepatoblastoma
-        </h3>
-        <p>
-            Hepatoblastoma can be treated by removing the tumor through surgical resection or liver transplantation. Occasionally, 
-            surgery can provide a remedy. Chemotherapy can be applied both prior to and following surgery or a transplant. <br> <br>
-            Chemotherapy for systemic hepatoblastoma treatment include vincristine, cyclophosphamide, doxorubicin, and cisplatin. 
-            Among these medications, cisplatin appears to be the most useful.
-         </p>
-
-         <h3>
-            Angiosarcoma and hemangiosarcoma
-         </h3>
-         <p>
-            Ultimately, a large number of these cancers are incurable. One course of treatment is to have the damaged liver sections 
-            surgically removed. Hemangiosarcomas and angiosarcomas of the liver do not respond well to chemotherapy or liver transplantation. 
-         </p>
+        <div class="treatment-info">
+            <div>
+                <h3>
+                    Intrahepatic cholangiocarcinoma
+                </h3>
+                <p>
+                    Although resection is a possibility for cholangiocarcinoma, less than 30% of cases are treatable at the time of 
+                    diagnosis. Many intrahepatic cholangiocarcinomas have many focal tumors within the liver, which makes surgical removal 
+                    of the bulk of these tumors impossible. Following surgery, up to 60% of cases return. <br> <br>
+                    In situations when partial resection is not a possibility, liver transplantation may be utilized; in other cases, 
+                    adjuvant chemotherapy and radiation may be beneficial. <br> <br>
+                    Since the perihilar area is where 60% of cholangiocarcinomas originate, photodynamic therapy can prolong survival and 
+                    enhance quality of life in these incurable cases. A new kind of treatment called photodynamic therapy targets the tumor 
+                    by using chemicals that are activated by light. <br> <br>
+                    Cholangiocarcinoma instances that are incurable may occasionally be treated with systemic chemotherapy, such as gemcitabine
+                     and cisplatin.
+                </p>
+            </div>
+            <img src="{intrahepatic_cholangiocarcinoma}" alt = "Patient getting diagnosis from two doctors" height = "250">
+        </div>
+        
+        <div class="treatment-info">
+            <img src="{hepatoblastoma}" alt = "Patient recieving treatment" height = "250">
+            <div>
+                <h3>
+                    Hepatoblastoma
+                </h3>
+                <p>
+                    Hepatoblastoma can be treated by removing the tumor through surgical resection or liver transplantation. Occasionally, 
+                    surgery can provide a remedy. Chemotherapy can be applied both prior to and following surgery or a transplant. <br> <br>
+                    Chemotherapy for systemic hepatoblastoma treatment include vincristine, cyclophosphamide, doxorubicin, and cisplatin. 
+                    Among these medications, cisplatin appears to be the most useful.
+                 </p>
+            </div>
+            
+        </div>
+        
+        <div class="treatment-info">
+            <div>
+                <h3>
+                    Angiosarcoma and hemangiosarcoma
+                 </h3>
+                 <p>
+                    Ultimately, a large number of these cancers are incurable. One course of treatment is to have the damaged liver sections 
+                    surgically removed. Hemangiosarcomas and angiosarcomas of the liver do not respond well to chemotherapy or liver transplantation. 
+                 </p>
+            </div>
+            <img src="{angiosarcoma_hemangiosarcoma}" alt = "Patient recieving treatment" height = "250">
+        </div>
+         
     </div>
 </div>
 
-<div class="analysis">
+<div class="analysis" id="analysis">
     <h2>
         Statistical Analysis
     </h2>
-    <div>
+    <div class="analysis-info">
         <p>
             According to the most recent epidemiological data, liver cancer ranks in the top ten for both prevalence and fatality. According to the 
             Global Burden of Disease Liver Cancer Collaboration, new incidences of liver cancer grew by 75% each year between 1990 and 2015. 
             According to the most recent data, 841,000 new liver cancer diagnoses and 782,000 deaths occur worldwide each year.
-        </p>
-        <div>
-            
-        </div>
+        </p>   
     </div>
     
 </div>
 
-<div class="disclaimer">
+<div class="disclaimer" id="disclaimer">
     <h1>
         DISCLAIMER: <br> THE INFORMATION PROVIDED ON THIS SITE IS FOR INFORMATIONAL PURPOSES ONLY AND IS NOT INTENDED AS A SUBSTITUTE FOR PROFESSIONAL 
         MEDICAL ADVICE, DIAGNOSIS, OR TREATMENT. ALWAYS SEEK THE ADVICE OF YOUR PHYSICIAN OR OTHER QUALIFIED HEALTH PROVIDER WITH ANY QUESTIONS 
@@ -229,7 +265,8 @@
     .nav{
         border: 1px solid black;
         border-radius: 10px;
-        
+        width: 80%;
+        margin: 0 auto;
     }
 
     .nav ul{
@@ -271,6 +308,14 @@
         margin-left: 20px;
     }
 
+    .what-is-liver-cancer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .what-is-liver-cancer img{
+        margin: auto auto;
+    }
     .causes {
         padding: 70px 100px;
         /* text-align: center; */
@@ -313,14 +358,27 @@
     .treatment h3{
         font-size: 1.5em;
     }
+
+    .treatment-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 60px;
+    }
     
+    .treatment-info img{
+        /* margin-left: 30px; */
+        margin: auto auto; 
+        border-radius: 120px 20px 120px 20px;
+    }
+
     .analysis {
         padding: 70px 100px;
         text-align: center;
-    }
+    }  
 
     .disclaimer {
         padding: 50px 100px;
         color: red;
+        background-color: #fff;
     }
 </style>

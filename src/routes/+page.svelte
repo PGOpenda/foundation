@@ -5,41 +5,8 @@
     import img_car_1 from '$lib/assets/img-car-1.jpg'
     import img_car_2 from '$lib/assets/img-car-2.jpg'
     import img_car_3 from '$lib/assets/img-car-3.jpg'
+    import faqData from '$lib/data/faq-data.json'
 
-    let faqs = [
-            {
-                question: 'What are the risk factors for liver cancer?',
-                answer: 'Risk factors for liver cancer include chronic infection with hepatitis B or C, cirrhosis, certain inherited liver diseases, diabetes, fatty liver disease, excessive alcohol consumption, and exposure to aflatoxins.'
-            },
-            {
-                question: 'What are the symptoms of liver cancer?',
-                answer: 'Early-stage liver cancer often does not cause symptoms. As the disease progresses, symptoms may include weight loss, loss of appetite, upper abdominal pain, nausea and vomiting, general weakness and fatigue, an enlarged liver, and yellowing of the skin and eyes (jaundice).'
-            },
-            {
-                question: 'How is liver cancer diagnosed?',
-                answer: 'Liver cancer is diagnosed through a combination of physical exams, blood tests, imaging tests (such as ultrasound, CT scan, and MRI), and sometimes a liver biopsy.'
-            },
-            {
-                question: 'What are the treatment options for liver cancer?',
-                answer: 'Treatment options for liver cancer depend on the stage and type of cancer and the overall health of the patient. They may include surgery, liver transplantation, ablation therapy, embolization, targeted therapy, immunotherapy, and radiation therapy.'
-            },
-            {
-                question: 'Can liver cancer be prevented?',
-                answer: 'While not all liver cancers can be prevented, the risk can be reduced by avoiding risk factors. Preventive measures include getting vaccinated against hepatitis B, reducing alcohol consumption, maintaining a healthy weight, managing diabetes, and avoiding exposure to aflatoxins.'
-            },
-            {
-                question: 'How can I support someone with liver cancer?',
-                answer: 'Supporting someone with liver cancer involves providing emotional support, helping with daily activities, accompanying them to medical appointments, and encouraging them to follow their treatment plan. Being a good listener and offering practical help can make a significant difference.'
-            },
-            {
-                question: 'How can I get involved with the Liver Care Foundation?',
-                answer: 'You can get involved with the Liver Care Foundation by donating, volunteering, participating in our events, and spreading awareness about liver cancer. Visit our "Get Involved" page for more information.'
-            },
-            {
-                question: 'What should I do if I think I have symptoms of liver cancer?',
-                answer: 'If you experience symptoms of liver cancer, it is crucial to seek medical advice immediately. Contact your healthcare provider for an evaluation and appropriate diagnostic tests. Early detection and treatment can improve outcomes.'
-            }
-    ];
 </script>
 
 
@@ -73,7 +40,7 @@
     <img src="{img_car_3}" alt="a father with his daughter smiling">
 </div>
 
-<div class="info">
+<!-- <div class="info">
     <h1>
         Resources and Information on Liver Cancer
     </h1>
@@ -92,9 +59,9 @@
             <li><a href="/">Prevention Measures</a></li>
         </ul>
     </div>
-</div>
+</div> -->
 
-<FAQ {faqs} />
+<FAQ faqs = {faqData} />
 
 <style>
     .hero {
@@ -156,7 +123,7 @@
     .imgs{
         display: flex;
         justify-content: center;
-        padding: 70px 100px;
+        padding: 50px 100px; 
         background-color: #fff;
         /* background: url(/background.svg); */
         background-size: cover;
@@ -168,13 +135,13 @@
         border-radius: 120px 20px 120px 20px;
     }
 
-    .info{
+    /* .info{
         padding: 50px 100px;
         /* text-align: center; */
         /* align-items: end; */
-    }
+    /* } */ 
 
-    .info h1{
+    /* .info h1{
         margin-bottom: 15px;
         font-size: 2.3em;
     }
@@ -199,6 +166,6 @@
     .info-cards li a{
         font-weight: 500;
         color: #fff;
-    }
+    } */
 
 </style>
