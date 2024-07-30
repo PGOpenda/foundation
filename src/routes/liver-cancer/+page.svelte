@@ -380,5 +380,6 @@
         padding: 50px 100px;
         color: red;
         background-color: #fff;
+        font-size: 0.8em;
     }
 </style>

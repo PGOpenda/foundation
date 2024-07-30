@@ -33,12 +33,13 @@
     }
 
     .heading img{
-        height: 350px;
+        height: 330px;
         border-radius: 120px 20px 120px 20px;
     }
 
     .blogs{
         padding: 70px 100px;
+        background-color: #fff;
     }
 
     .blogs h2{
