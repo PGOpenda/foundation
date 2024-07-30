@@ -121,7 +121,7 @@
     }
 
     .about-info{
-        padding: 70px 100px;
+        padding: 50px 100px;
         background-color: #fff;
         text-align: center;
     }
@@ -146,7 +146,7 @@
     }
 
     .about-cards{
-        padding: 70px 100px;
+        padding: 50px 100px;
         text-align: center;
     }
 
