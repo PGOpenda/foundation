@@ -1,6 +1,6 @@
 <script>
 
-    import FAQ from '$lib/FAQ.svelte';
+    import FAQ from '$lib/components/FAQ.svelte';
     import hero_pic from '$lib/assets/hero-pic.jpg';
     import img_car_1 from '$lib/assets/img-car-1.jpg'
     import img_car_2 from '$lib/assets/img-car-2.jpg'
@@ -40,26 +40,6 @@
     <img src="{img_car_3}" alt="a father with his daughter smiling">
 </div>
 
-<!-- <div class="info">
-    <h1>
-        Resources and Information on Liver Cancer
-    </h1>
-
-    <p>
-        Around 800,000 individuals worldwide receive a diagnosis of this illness every year. 
-        With over 700,000 deaths from the disease each year, liver cancer is also one of the 
-        main causes of cancer-related mortality globally. We’re here with answers, guidance, and support.
-    </p>
-
-    <div class="info-cards">
-        <ul>
-            <li><a href="/">Understading Liver Cancer </a></li>
-            <li><a href="/">Managing Liver Cancer</a></li>
-            <li><a href="/">FInd Support & Resources</a></li>
-            <li><a href="/">Prevention Measures</a></li>
-        </ul>
-    </div>
-</div> -->
 
 <FAQ faqs = {faqData} />
 
@@ -135,37 +115,5 @@
         border-radius: 120px 20px 120px 20px;
     }
 
-    /* .info{
-        padding: 50px 100px;
-        /* text-align: center; */
-        /* align-items: end; */
-    /* } */ 
-
-    /* .info h1{
-        margin-bottom: 15px;
-        font-size: 2.3em;
-    }
-
-    .info p{
-        margin-bottom: 15px;   
-    }
-
-    .info-cards ul {
-        display: flex;
-        width: 100%;
-        list-style: none;
-    }
-
-    .info-cards li {
-        margin-right: 25px;
-        border: 1px solid #9d0063;
-        padding: 10px;
-        background-color: #9d0063;
-    }
-
-    .info-cards li a{
-        font-weight: 500;
-        color: #fff;
-    } */
 
 </style>

@@ -6,7 +6,7 @@
     import intrahepatic_cholangiocarcinoma from "$lib/assets/Intrahepatic-cholangiocarcinoma.jpg"
     import hepatoblastoma from '$lib/assets/Hepatoblastoma.jpg'
     import angiosarcoma_hemangiosarcoma from '$lib/assets/Angiosarcoma-hemangiosarcoma.jpg'
-    import { smoothScroll } from '$lib/smoothScroll';
+    import { smoothScroll } from '$lib/actions/smoothScroll';
 </script>
 
 <div class="header">
@@ -288,6 +288,10 @@
         color: #ff347d;
         border-bottom: 1px solid #ff347d;
         transition: 500ms;
+    }
+
+    [id] {
+        scroll-margin-top: 200px;
     }
 
     .liver-info{
