@@ -90,7 +90,7 @@
     }
 
     .info span{
-        color: #9d0063;
+        color: #1A5319;
     }
 
     .info h2 {
@@ -114,7 +114,7 @@
     }
 
     .info-grid button {
-        background-color: #9d0063;
+        background-color: #1A5319;
         color: #fff;
         border: none;
         padding: 15px;

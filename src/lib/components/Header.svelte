@@ -71,23 +71,23 @@
     }
 
     nav a:hover {
-        color: #ff347d;
+        color: #80AF81;
         transition: 500ms;
-        border-bottom: 1px solid #ff347d;
+        border-bottom: 1px solid #80AF81;
         
     }
 
     .contact-btn{
-        background-color: #9d0063;
-        border: 1px solid #9d0063;
+        background-color: #1A5319;
+        border: 1px solid #1A5319;
         color: #fff;
         padding: 12px;
         border-radius: 25px;
     }
 
     .contact-btn:hover {
-        background-color: #ff347d;
-        border: 1px solid #ff347d;
+        background-color: #80AF81;
+        border: 1px solid #80AF81;
         color: black;
         transition: 500ms;
     }

@@ -285,8 +285,8 @@
     }
 
     .nav a:hover{
-        color: #ff347d;
-        border-bottom: 1px solid #ff347d;
+        color: #80AF81;
+        border-bottom: 1px solid #80AF81;
         transition: 500ms;
     }
 

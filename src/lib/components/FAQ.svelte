@@ -70,7 +70,7 @@
 
     .faq-question {
         border: none;
-        background-color: #fff7fa;
+        background-color: #D6EFD8;
         text-align: left;
         width: 100%;
         padding: 10px;
