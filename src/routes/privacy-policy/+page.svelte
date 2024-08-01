@@ -12,7 +12,7 @@
         <h3>1. Introduction</h3> <br>
 
         <p>
-            Liver Care Foundation is committed to protecting the privacy of our website 
+            The Ben Kijuu Foundation is committed to protecting the privacy of our website 
             visitors, donors, volunteers, and beneficiaries. This Privacy Policy explains how we collect, use, disclose, and 
             safeguard your information when you interact with our website or services.
         </p> <br>
@@ -87,7 +87,7 @@
 
 <style>
     .header {
-        padding: 70px 100px;
+        padding: 50px 100px;
     }
 
     .header h1 {

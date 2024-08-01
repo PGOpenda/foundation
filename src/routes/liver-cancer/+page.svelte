@@ -242,7 +242,7 @@
 
 <style>
     .header {
-        padding: 70px 100px;
+        padding: 50px 100px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -285,8 +285,8 @@
     }
 
     .nav a:hover{
-        color: #ff347d;
-        border-bottom: 1px solid #ff347d;
+        color: #80AF81;
+        border-bottom: 1px solid #80AF81;
         transition: 500ms;
     }
 

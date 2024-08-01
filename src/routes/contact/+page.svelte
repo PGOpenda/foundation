@@ -36,7 +36,7 @@
     }
 
     .contact span {
-        color: #9d0063;
+        color: #1A5319;
     }
 
     .contact-form {
@@ -54,8 +54,8 @@
         margin-bottom: 20px;
         width: 70%;
         height: 12%;
-        background-color: #ffb4d0;
-        border: 1px solid #ffb4d0;
+        background-color: #80AF81;
+        border: 1px solid #80AF81;
         font-size: 1em;
 
     }
@@ -64,8 +64,8 @@
         width: 70%;
         height: 40%;
         margin-bottom: 20px;
-        background-color: #ffb4d0;
-        border: 1px solid #ffb4d0;
+        background-color: #80AF81;
+        border: 1px solid #80AF81;
         font-size: 1em;
     }
 
@@ -78,7 +78,7 @@
         align-items: baseline;
         width: fit-content;
         padding: 12px;
-        background-color: #9d0063;
+        background-color: #1A5319;
         color: #fff;
         border-radius: 22px;
         border: none;
@@ -95,7 +95,8 @@
     }
 
     .contact-info{
-        padding: 0px 30px;
+        /* padding: 0px 30px; */
+        margin: auto;
     }
 
     .contact-info h2{

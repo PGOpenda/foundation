@@ -28,7 +28,8 @@
             <li><a href="/about-us"> Who We Are</a></li>
             <li><a href="/liver-cancer"> About Liver Cancer</a></li>
             <li><a href="/get-involved"> Get Involved</a></li>
-            <li><a href="/news"> News & Updates</a></li>
+            <li><a href="/partners">Our Partners</a></li>
+            <!-- <li><a href="/news"> News & Updates</a></li> -->
             <li><a href="/contact" class="contact-btn"> Contact Us</a></li>        
         </ul>
     </nav>
@@ -71,23 +72,23 @@
     }
 
     nav a:hover {
-        color: #ff347d;
+        color: #80AF81;
         transition: 500ms;
-        border-bottom: 1px solid #ff347d;
+        border-bottom: 1px solid #80AF81;
         
     }
 
     .contact-btn{
-        background-color: #9d0063;
-        border: 1px solid #9d0063;
+        background-color: #1A5319;
+        border: 1px solid #1A5319;
         color: #fff;
         padding: 12px;
         border-radius: 25px;
     }
 
     .contact-btn:hover {
-        background-color: #ff347d;
-        border: 1px solid #ff347d;
+        background-color: #80AF81;
+        border: 1px solid #80AF81;
         color: black;
         transition: 500ms;
     }
