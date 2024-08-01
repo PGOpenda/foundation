@@ -242,7 +242,7 @@
 
 <style>
     .header {
-        padding: 70px 100px;
+        padding: 50px 100px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }

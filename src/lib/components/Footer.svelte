@@ -2,7 +2,7 @@
     <div class="footer-links">
         <div>
             <h3>
-                Liver Care Foundation&copy;
+                Ben Kijuu Foundation&copy;
             </h3>
         </div>
         <div>

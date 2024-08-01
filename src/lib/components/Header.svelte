@@ -28,7 +28,8 @@
             <li><a href="/about-us"> Who We Are</a></li>
             <li><a href="/liver-cancer"> About Liver Cancer</a></li>
             <li><a href="/get-involved"> Get Involved</a></li>
-            <li><a href="/news"> News & Updates</a></li>
+            <li><a href="/partners">Our Partners</a></li>
+            <!-- <li><a href="/news"> News & Updates</a></li> -->
             <li><a href="/contact" class="contact-btn"> Contact Us</a></li>        
         </ul>
     </nav>

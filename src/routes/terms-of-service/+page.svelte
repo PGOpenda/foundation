@@ -12,7 +12,7 @@
         <h3>1. Acceptance of Terms</h3> <br>
 
         <p>
-            By accessing or using the website of Liver Care Foundation, you agree to comply with and be bound by these 
+            By accessing or using the website of The Ben Kijuu Foundation, you agree to comply with and be bound by these 
             Terms of Service. If you do not agree to these terms, please do not use our website.
         </p> <br>
 
@@ -89,7 +89,7 @@
 
 <style>
     .header {
-        padding: 70px 100px;
+        padding: 50px 100px;
     }
 
     .header h1 {

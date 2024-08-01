@@ -6,9 +6,9 @@
     import img_car_2 from '$lib/assets/img-car-2.jpg'
     import img_car_3 from '$lib/assets/img-car-3.jpg'
     import faqData from '$lib/data/faq-data.json'
+    // import FadeIn from '$lib/components/FadeIn.svelte';
 
 </script>
-
 
 <div class="hero">
     <div>
@@ -22,13 +22,14 @@
 
 </div>
 
+
 <div class="hero-2">
     <h1>
         <span>Welcome</span>
     </h1>
 
     <p>
-        The Liver Care Foundation strives to provide 
+        The Ben Kijuu Foundation strives to provide 
         support, education, and resources to those affected by liver cancer and to fund research 
         for better treatments and ultimately a cure
     </p>
@@ -42,6 +43,7 @@
 
 
 <FAQ faqs = {faqData} />
+
 
 <style>
     .hero {

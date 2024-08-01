@@ -8,7 +8,7 @@
             All About the 
         </h3>
         <h1>
-            Liver Care <br>Foundation
+            Ben Kijuu <br>Foundation
         </h1>
     </div>
         <img src="{who}" alt="people holding hands">
@@ -103,7 +103,7 @@
     .about-heading{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        padding: 70px 100px;
+        padding: 50px 100px;
     }
 
     .about-heading h3{

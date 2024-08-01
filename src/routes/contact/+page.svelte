@@ -95,7 +95,8 @@
     }
 
     .contact-info{
-        padding: 0px 30px;
+        /* padding: 0px 30px; */
+        margin: auto;
     }
 
     .contact-info h2{
