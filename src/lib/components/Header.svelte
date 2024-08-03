@@ -1,100 +1,99 @@
 <script>
-    import { onMount } from 'svelte';
-    
-    let scrollY;
-    let isScrolled = false;
-  
-    onMount(() => {
-      const handleScroll = () => {
-        scrollY = window.scrollY;
-        isScrolled = scrollY > 0;
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    });
+	import { onMount } from 'svelte';
+
+	let scrollY;
+	let isScrolled = false;
+
+	onMount(() => {
+		const handleScroll = () => {
+			scrollY = window.scrollY;
+			isScrolled = scrollY > 0;
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	});
 </script>
 
 <header id="header" class:scrolled={isScrolled}>
-    <a href="/">
-        <img src="/Logo.svg" alt="Liver Care Foundation">  
-    </a>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="/"> Home </a></li>
-            <li><a href="/about-us"> Who We Are</a></li>
-            <li><a href="/liver-cancer"> About Liver Cancer</a></li>
-            <li><a href="/get-involved"> Get Involved</a></li>
-            <li><a href="/partners">Our Partners</a></li>
-            <!-- <li><a href="/news"> News & Updates</a></li> -->
-            <li><a href="/contact" class="contact-btn"> Contact Us</a></li>        
-        </ul>
-    </nav>
+	<a href="/">
+		<img src="/Logo.svg" alt="Liver Care Foundation" />
+	</a>
+	<nav>
+		<ul class="nav-links">
+			<li><a href="/"> Home </a></li>
+			<li><a href="/about-us"> Who We Are</a></li>
+			<li><a href="/liver-cancer"> About Liver Cancer</a></li>
+			<li><a href="/get-involved"> Get Involved</a></li>
+			<li><a href="/partners">Our Partners</a></li>
+			<!-- <li><a href="/news"> News & Updates</a></li> -->
+			<li><a href="/contact" class="contact-btn"> Contact Us</a></li>
+		</ul>
+	</nav>
 </header>
 
 <style>
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 115px;
-        z-index: 1000;  
-        display: flex;
-        justify-content: space-between;
-        padding: 0 40px;
-        z-index: 1000;
-        transition: all 0.3s ease;
-    }
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 110px;
+		z-index: 1000;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 40px;
+		z-index: 1000;
+		transition: all 0.3s ease;
+	}
 
-    nav {
-        margin-top: auto;
-        margin-bottom: auto;
-    }
+	nav {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
 
-    .nav-links {
-        display: flex; 
-        list-style: none;       
-    }
+	.nav-links {
+		display: flex;
+		list-style: none;
+	}
 
-    .nav-links li{
-        padding: 0px 15px;
-    }
+	.nav-links li {
+		padding: 0px 15px;
+	}
 
-    nav a{
-        font-size: 1em;
-        font-weight: 500;
-        color: #000;
-        text-align: center;
-    }
+	nav a {
+		font-size: 1em;
+		font-weight: 500;
+		color: #000;
+		text-align: center;
+	}
 
-    nav a:hover {
-        color: #80AF81;
-        transition: 500ms;
-        border-bottom: 1px solid #80AF81;
-        
-    }
+	nav a:hover {
+		color: #80af81;
+		transition: 500ms;
+		border-bottom: 1px solid #80af81;
+	}
 
-    .contact-btn{
-        background-color: #1A5319;
-        border: 1px solid #1A5319;
-        color: #fff;
-        padding: 12px;
-        border-radius: 25px;
-    }
+	.contact-btn {
+		background-color: #1a5319;
+		border: 1px solid #1a5319;
+		color: #fff;
+		padding: 12px;
+		border-radius: 25px;
+	}
 
-    .contact-btn:hover {
-        background-color: #80AF81;
-        border: 1px solid #80AF81;
-        color: black;
-        transition: 500ms;
-    }
+	.contact-btn:hover {
+		background-color: #80af81;
+		border: 1px solid #80af81;
+		color: black;
+		transition: 500ms;
+	}
 
-    header.scrolled {
-        background-color: white;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+	header.scrolled {
+		background-color: white;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
 </style>
