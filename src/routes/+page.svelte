@@ -1,9 +1,9 @@
 <script>
 	import FAQ from '$lib/components/FAQ.svelte';
-	import hero_pic from '$lib/assets/hero-pic.jpg';
-	import img_car_1 from '$lib/assets/img-car-1.jpg';
-	import img_car_2 from '$lib/assets/img-car-2.jpg';
-	import img_car_3 from '$lib/assets/img-car-3.jpg';
+	import hero_pic from '$lib/assets/hero-pic.webp';
+	import img_car_1 from '$lib/assets/img-car-1.webp';
+	import img_car_2 from '$lib/assets/img-car-2.webp';
+	import img_car_3 from '$lib/assets/img-car-3.webp';
 	import faqData from '$lib/data/faq-data.json';
 	// import FadeIn from '$lib/components/FadeIn.svelte';
 </script>
