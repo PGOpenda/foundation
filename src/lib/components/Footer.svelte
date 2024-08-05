@@ -17,7 +17,7 @@
 	</div>
 	<div class="footer-end">
 		<div>
-			<p>&copy;2024 Copyright Liver Care Foundation. All Rights Reserved</p>
+			<p>&copy;2024 Copyright Ben Kijuu Foundation. All Rights Reserved</p>
 		</div>
 		<div>
 			<a href="/terms-of-service">Terms of Service</a>
