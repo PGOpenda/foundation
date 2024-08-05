@@ -1,5 +1,5 @@
 <script>
-	import partners from '$lib/assets/partners.jpg';
+	import partners from '$lib/assets/partners.webp';
 </script>
 
 <div class="heading">
