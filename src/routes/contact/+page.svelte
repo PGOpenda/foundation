@@ -1,3 +1,9 @@
+<svelte:head>
+    <title>Contact Us - Ben Kijuu Foundation</title>
+    <meta name="description" content="Get in touch with the Ben Kijuu Foundation for more information, support, or to get involved in our mission against liver cancer.">
+    <meta name="keywords" content="contact ben kijuu foundation, liver cancer support, ben kijuu foundation contact">
+</svelte:head>
+
 <div class="contact">
     <h1>Here to <span>help</span></h1>
     <div class="contact-form">

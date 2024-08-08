@@ -1,3 +1,9 @@
+<svelte:head>
+    <title>Terms of Service - Ben Kijuu Foundation</title>
+    <meta name="description" content="Understand the terms of service for using the Ben Kijuu Foundation's website and engaging with our services and resources.">
+    <meta name="keywords" content="terms of service, website terms, ben kijuu foundation terms, service terms">
+</svelte:head>
+
 <div class="header">
     <h1>
         Terms of Service

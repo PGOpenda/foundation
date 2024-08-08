@@ -5,6 +5,12 @@
 	import events from '$lib/assets/events.webp';
 </script>
 
+<svelte:head>
+    <title>Get Involved - Ben Kijuu Foundation</title>
+    <meta name="description" content="Join the Ben Kijuu Foundation in the fight against liver cancer by donating, volunteering, or participating in our events and initiatives.">
+    <meta name="keywords" content="get involved, liver cancer support, donate to liver cancer, volunteer liver cancer, liver cancer events">
+</svelte:head>
+
 <div class="heading">
 	<div>
 		<h1>Get Involved</h1>

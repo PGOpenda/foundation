@@ -1,7 +1,15 @@
+<script>
+    import {page} from '$app/stores'
+</script>
+
+<svelte:head>
+    <title>{$page.status} {$page.error?.message}</title>
+</svelte:head>
+
 <div class="error">
 	<h1>
-		<span class="material-symbols-outlined"> report </span>
-		404 Not Found
+	<span class="material-symbols-outlined">sentiment_dissatisfied</span>
+		{$page.status} {$page.error?.message}
 	</h1>
 </div>
 
