@@ -1,3 +1,9 @@
+<svelte:head>
+    <title>Privacy Policy - Ben Kijuu Foundation</title>
+    <meta name="description" content="Review the privacy policy of the Ben Kijuu Foundation to understand how we collect, use, and protect your personal information.">
+    <meta name="keywords" content="privacy policy, data protection, ben kijuu foundation privacy, personal information policy">
+</svelte:head>
+
 <div class="header">
     <h1>
         Privacy Policy

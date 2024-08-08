@@ -9,6 +9,12 @@
 	import { smoothScroll } from '$lib/actions/smoothScroll';
 </script>
 
+<svelte:head>
+    <title>About Liver Cancer - Ben Kijuu Foundation</title>
+    <meta name="description" content="Learn about liver cancer, its causes, symptoms, treatments, and prevention strategies to help raise awareness and support for those affected.">
+    <meta name="keywords" content="about liver cancer, liver cancer causes, liver cancer symptoms, liver cancer treatments, liver cancer prevention">
+</svelte:head>
+
 <div class="header">
 	<div>
 		<h1>Liver Cancer</h1>

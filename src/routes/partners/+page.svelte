@@ -2,6 +2,12 @@
 	import partners from '$lib/assets/partners.webp';
 </script>
 
+<svelte:head>
+    <title>Our Partners - Ben Kijuu Foundation</title>
+    <meta name="description" content="Meet the partners and organizations that collaborate with the Liver Hope Foundation to support liver cancer research and awareness initiatives.">
+    <meta name="keywords" content="liver cancer partners, cancer foundation partners, ben kijuu foundation partners, cancer awareness partners">
+</svelte:head>
+
 <div class="heading">
 	<div>
 		<h1>Our Partners</h1>

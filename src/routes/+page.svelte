@@ -8,6 +8,12 @@
 	// import FadeIn from '$lib/components/FadeIn.svelte';
 </script>
 
+<svelte:head>
+    <title>Ben Kijuu Foundation</title>
+    <meta name="description" content="The Ben Kijuu Foundation is dedicated to raising awareness, supporting research, and providing resources for those affected by liver cancer.">
+    <meta name="keywords" content="liver cancer, liver cancer support, cancer awareness, liver health, cancer research">
+</svelte:head>
+
 <div class="hero">
 	<div>
 		<h1>Fighting Liver Cancer Together: Hope, Research, Support</h1>

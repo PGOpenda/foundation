@@ -2,6 +2,12 @@
 	import who from '$lib/assets/who-we-are.webp';
 </script>
 
+<svelte:head>
+    <title>About Us - Ben Kijuu Foundation</title>
+    <meta name="description" content="Learn about the Liver Hope Foundation, our mission, vision, and core values in the fight against liver cancer.">
+    <meta name="keywords" content="liver cancer foundation, cancer awareness, liver cancer research, about liver cancer support">
+</svelte:head>
+
 <div class="about-heading">
 	<div>
 		<h3>All About the</h3>
