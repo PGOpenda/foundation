@@ -12,7 +12,7 @@ export function smoothScroll(node, options = {}) {
       const target = document.querySelector(href);
       
       if (target) {
-        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 115;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - 105;
         const startPosition = window.pageYOffset;
         const distance = targetPosition - startPosition;
         let startTime = null;

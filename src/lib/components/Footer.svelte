@@ -35,7 +35,6 @@
 		padding: 30px 0px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 15px;
 	}
 
 	.footer-links h3 {
