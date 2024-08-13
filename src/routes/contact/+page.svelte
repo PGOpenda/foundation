@@ -118,4 +118,42 @@
     .contact-info p{
         margin-bottom: 15px;
     }
+
+    @media screen and (max-width: 600px) {
+        .contact{
+            padding: 20px;
+        }
+        
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+            margin-top: 1em;
+        }
+
+        .contact-form form h2{
+            font-size: 1.9em;
+        }
+
+        .contact-info{
+            margin-top: 10em;
+        }
+
+        .contact h1{
+            font-size: 2.5em;
+        }
+
+        .contact-info h2{
+            font-size: 1.9em;
+        }
+
+        .contact-info h3, .contact-info p{
+            text-align: center;
+        }
+
+        .contact-form input, .contact-form textarea{
+            width: 100%;
+        } 
+    }
 </style>

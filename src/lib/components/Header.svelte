@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 
+	//Scrolling event listener
 	let scrollY;
 	let isScrolled = false;
 
@@ -16,19 +17,43 @@
 			window.removeEventListener('scroll', handleScroll);
 		};
 	});
+
+	//Mobile nav view
+	let isOpen = false;
+
+	function toggleNav() {
+		isOpen = !isOpen;
+	}
+
+	function closeNav(){
+		isOpen = false;
+	}
+
 </script>
 
 <header id="header" class:scrolled={isScrolled}>
 	<a href="/">
-		<img src="/Logo.svg" alt="Liver Care Foundation" />
+		<img src="/Logo.svg" alt="Ben Kijuu Foundation" />
 	</a>
-	<nav>
-		<ul class="nav-links">
-			<li><a href="/"> Home </a></li>
-			<li><a href="/about-us"> Who We Are</a></li>
-			<li><a href="/liver-cancer"> About Liver Cancer</a></li>
-			<li><a href="/get-involved"> Get Involved</a></li>
-			<li><a href="/partners">Our Partners</a></li>
+
+	<button class="nav-toggle" aria-label="Toggle navigation" on:click={toggleNav} >
+		<span class="material-symbols-outlined">
+			menu
+		</span>
+	</button>
+	
+	<nav class="nav-links-container" class:active={isOpen}>
+		<button class="close-nav" on:click={toggleNav} aria-label="Close navigation">
+			<span class="material-symbols-outlined">
+				close
+			</span>
+		</button>
+		<ul class="nav-links" class:active={isOpen}>
+			<li><a href="/" on:click={closeNav}> Home </a></li>
+			<li><a href="/about-us" on:click={closeNav}> Who We Are</a></li>
+			<li><a href="/liver-cancer" on:click={closeNav}> About Liver Cancer</a></li>
+			<li><a href="/get-involved" on:click={closeNav}> Get Involved</a></li>
+			<li><a href="/partners" on:click={closeNav}>Our Partners</a></li>
 			<!-- <li><a href="/news"> News & Updates</a></li> -->
 			<li><a href="/contact" class="contact-btn"> Contact Us</a></li>
 		</ul>
@@ -45,14 +70,10 @@
 		z-index: 1000;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		padding: 0 40px;
 		z-index: 1000;
 		transition: all 0.3s ease;
-	}
-
-	nav {
-		margin-top: auto;
-		margin-bottom: auto;
 	}
 
 	.nav-links {
@@ -62,6 +83,14 @@
 
 	.nav-links li {
 		padding: 0px 15px;
+	}
+
+	.nav-toggle{
+		display: none;	
+	}
+
+	.close-nav{
+		display: none;
 	}
 
 	nav a {
@@ -96,4 +125,65 @@
 		background-color: white;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	}
+
+
+	/* Mobile design */
+	@media screen and (max-width: 600px) {
+		header{
+			padding: 0 10px;
+
+		}
+		
+		.nav-toggle {
+			display: block;
+			background: none;
+			border: none;
+			cursor: pointer;
+			margin-right: 2em;
+		}
+
+		.nav-toggle span{
+			font-size: 2.5em;
+		}
+
+		.nav-links-container {
+			position: fixed;
+			top: 0;
+			right: 0;
+			height: 100vh;
+			width: 250px;
+			background-color: #f8f8f8;
+			padding: 2rem;
+			transform: translateX(100%);
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.nav-links-container.active {
+			transform: translateX(0);
+		}
+
+		.nav-links {
+			flex-direction: column;
+		}
+
+		.nav-links li {
+			margin: 1rem 0;
+		}
+
+		.close-nav {
+			display: block;
+			background: none;
+			border: none;
+			font-size: 1.5rem;
+			cursor: pointer;
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+		}
+
+		.close-nav span{
+			font-size: 1.2em;
+		}
+	}
+
 </style>

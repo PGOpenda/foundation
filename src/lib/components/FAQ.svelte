@@ -3,7 +3,7 @@
 
 	import { slide } from 'svelte/transition';
 
-	export let faqs = [];
+	export let faqData = [];
 
 	let activeIndex = null;
 
@@ -22,7 +22,7 @@
 <div class="faq-container">
 	<h1>Frequently Asked Questions</h1>
 
-	{#each faqs as faq, index}
+	{#each faqData as faq, index}
 		<div class="faq-item">
 			<button
 				type="button"
@@ -88,5 +88,20 @@
 
 	.faq-question.active::after {
 		transform: rotate(180deg);
+	}
+
+	@media screen and (max-width: 600px) {
+		.faq-container{
+			padding: 30px 0px;
+			width: 90%;
+		}
+
+		.faq-container h1{
+			font-size: 1.7em;
+		}
+
+		.faq-question{
+			font-size: 1.1em;
+		}
 	}
 </style>

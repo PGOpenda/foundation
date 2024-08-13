@@ -54,4 +54,36 @@
 		margin: 0 auto;
 		text-align: center;
 	}
+
+	/* Mobile devices */
+	@media screen and (max-width: 600px) {
+		.heading{
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 20px;
+			align-items: center;
+		}
+
+		.heading h1{
+			font-size: 2.5em;
+			padding: 40px 0;
+		}
+
+		.heading img{
+			height: 230px;
+			width: fit-content;
+		}
+
+		.partner-info {
+			padding: 40px 20px;
+		}
+
+		.partner-info div{
+			width: 90%;
+		}
+
+		.partner-info div h2{
+			font-size: 1.3em;
+		}
+	}
 </style>

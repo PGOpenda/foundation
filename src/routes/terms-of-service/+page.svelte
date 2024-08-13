@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import terms from '$lib/data/terms-of-service.json';
     import DOMPurify from 'dompurify';
     
@@ -58,5 +60,23 @@
 
     .service-info h3{
         font-size: 1.5em;
+    }
+
+    @media screen and (max-width: 600px) {
+        .header {
+            padding: 30px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+        }
+
+        .service{
+            padding: 20px;           
+        }
+
+        .service-info {
+            max-width: 100%;
+        }
     }
 </style>
