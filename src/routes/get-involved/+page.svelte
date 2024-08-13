@@ -34,7 +34,7 @@
 		<img src={donate} alt="A jar with donation money" />
 	</div>
 
-	<div class="info-grid">
+	<div class="info-grid" id="col-reverse" >
 		<img src={volunteer} alt="A volunteer" />
 		<div>
 			<h2>
@@ -118,5 +118,52 @@
 		font-size: 1em;
 		border-radius: 10px;
 		cursor: not-allowed;
+	}
+
+	/* Mobile view */
+	@media screen and (max-width: 600px) {
+		.heading{
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 10px;
+			align-items: center;
+		}
+
+		.heading h1{
+			font-size: 2.5em;
+			text-align: left;
+			padding: 50px 0;
+		}
+
+		.heading img{
+			height: 230px;
+			width: fit-content;
+		}
+
+		.info{
+			padding: 20px;
+		}
+
+		.info h2{
+			font-size: 2em;
+		}
+
+		.info-grid{
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin-bottom: 1.5em;
+		}
+
+		#col-reverse{
+			flex-direction: column-reverse;
+		}
+
+		.info-grid img{
+			height: 200px;
+			width: fit-content;
+			margin-top: 1em;
+		}
+
 	}
 </style>

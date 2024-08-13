@@ -175,4 +175,60 @@
 		margin-top: 10px;
 		font-size: 2em;
 	}
+
+	/* Mobile sytles */
+	@media screen and (max-width: 600px) {
+		.about-heading{
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 20px;
+			align-items: center;
+		}
+
+		.about-heading h1{
+			font-size: 2.5em;
+		}
+
+		.about-heading h1, .about-heading h3{
+			text-align: left;
+		}
+
+		.about-heading img{
+			margin-top: 1em;
+			height: 200px;
+			width: fit-content;
+		}
+
+		.about-info {
+			padding: 50px 20px;
+		}
+
+		.about-info p{
+			margin-bottom: 40px;
+		}
+
+		.about-info h2{
+			font-size: 1.7em;
+		}
+
+		.about-cards{
+			padding: 20px;
+		}
+
+		.cards{
+			display: block;
+			padding: 0;
+			margin-top: 2em;
+			margin-left: 0;
+		}
+
+		.card {
+			width: 80%;
+			margin: 1em auto;
+		}
+
+		.about-cards h2{
+			font-size: 2em;
+		}
+	}
 </style>

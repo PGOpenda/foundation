@@ -9,10 +9,11 @@
 </script>
 
 <svelte:head>
-    <title>Ben Kijuu Foundation</title>
+    <title>Homepage - Ben Kijuu Foundation</title>
     <meta name="description" content="The Ben Kijuu Foundation is dedicated to raising awareness, supporting research, and providing resources for those affected by liver cancer.">
     <meta name="keywords" content="liver cancer, liver cancer support, cancer awareness, liver health, cancer research">
 </svelte:head>
+
 
 <div class="hero">
 	<div>
@@ -20,7 +21,7 @@
 		<a href="/about-us"> The Ben Kijuu Foundation</a>
 	</div>
 
-	<img src={hero_pic} alt="old man with his daughter" />
+	<img src={hero_pic} alt="An old man with his daughter playing tennis" />
 </div>
 
 <div class="hero-2">
@@ -35,12 +36,12 @@
 </div>
 
 <div class="imgs">
-	<img src={img_car_1} alt="a family taking a selfie together" />
-	<img src={img_car_2} alt="a patient getting instructinos from a nurse" />
-	<img src={img_car_3} alt="a father with his daughter smiling" />
+	<img src={img_car_1} alt="A family taking a selfie together" />
+	<img src={img_car_2} alt="A patient getting instructions from a nurse" />
+	<img src={img_car_3} alt="A father with his daughter smiling" />
 </div>
 
-<FAQ faqs={faqData} />
+<FAQ {faqData} />
 
 <style>
 	.hero {
@@ -112,5 +113,57 @@
 		height: 210px;
 		padding: 0px 5px;
 		border-radius: 120px 20px 120px 20px;
+	}
+
+	@media screen and (max-width: 600px) {
+		.hero{
+			display: block;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.hero div{
+			text-align: left;
+		}
+
+		.hero h1{
+			font-size: 2.5em;
+			/* text-align: left; */
+		}
+
+
+		.hero img{
+			/* text-align: center; */
+			margin-top: 3em;
+			height: 190px;
+			max-width: fit-content;
+		}
+
+		.imgs{
+			display: block;
+			padding: 20px;
+			text-align: center;
+			padding: 40px 0px;
+		}
+
+		.imgs img{
+			height: 180px;
+			/* padding: 10px 0px; */
+			margin: 10px 0px;
+		}
+
+		.hero-2{
+			padding: 20px;
+		}
+
+		.hero-2 h1{
+			font-size: 2.1em;
+		}
+
+		.hero-2 p{
+			max-width: fit-content;
+			font-size: 1em;
+			padding: 0 1.5em;
+		}
 	}
 </style>

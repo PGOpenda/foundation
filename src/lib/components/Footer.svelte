@@ -17,9 +17,9 @@
 	</div>
 	<div class="footer-end">
 		<div>
-			<p>&copy;2024 Copyright Ben Kijuu Foundation. All Rights Reserved</p>
+			<p>&copy;2024 Copyright Ben Kijuu Foundation.</p>
 		</div>
-		<div>
+		<div class="terms">
 			<a href="/terms-of-service">Terms of Service</a>
 			<a href="/privacy-policy">Privacy Policy</a>
 		</div>
@@ -74,5 +74,25 @@
 		border: 1px solid #80af81;
 		color: black;
 		transition: 500ms;
+	}
+
+	@media screen and (max-width: 600px) {
+		.footer-links{
+			display: block;
+			padding: 30px 0;
+		}
+
+		.footer-links h3{
+			padding-top: 0px;
+		}
+
+		.footer-end{
+			display: block;
+			padding: 10px;
+		}
+
+		.terms{
+			margin-top: 1em;
+		}
 	}
 </style>
