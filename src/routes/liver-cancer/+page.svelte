@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import liver_cancer_header from '$lib/assets/liver-cancer.webp';
 	import liver_cancer_illustration from '$lib/assets/liver-cancer-illustration.webp';
 	import general_consideration from '$lib/assets/general-consideration.webp';
@@ -7,6 +9,14 @@
 	import hepatoblastoma from '$lib/assets/Hepatoblastoma.webp';
 	import angiosarcoma_hemangiosarcoma from '$lib/assets/Angiosarcoma-hemangiosarcoma.webp';
 	import { smoothScroll } from '$lib/actions/smoothScroll';
+	import classifications from '$lib/data/liver-classifications.json'
+	import treatments from '$lib/data/liver-treatments.json'
+    import DOMPurify from 'dompurify';
+    
+    function convertNewlinesToBr(text) {
+        const sanitizedText = DOMPurify.sanitize(text.replace(/\n/g, '<br>'))
+        return sanitizedText;
+    }
 </script>
 
 <svelte:head>
@@ -54,39 +64,14 @@
 			arteries, and immune cells can also cause liver cancer.
 			<br />
 		</p>
+
 		<ol>
+			{#each classifications as classification}
 			<li>
-				<strong>Hepatocellular carcinoma </strong> <br />
-				Hepatocellular carcinoma (HCC) is the most common type of liver cancer, making up around 75%
-				of all primary liver malignancies . Hepatocytes, which are liver cells, can develop into cancerous
-				cells to cause HCC.
+				<strong>{classification.heading} </strong> <br />
+				{classification.paragraph}
 			</li>
-			<li>
-				<strong>Intrahepatic cholangiocarcinoma</strong> <br />
-				About 6% of primary liver tumors are bile duct malignancies, including cholangiocarcinoma and
-				cholangiocellular cystadenocarcinoma. An epithelial malignancy of the intrahepatic biliary tree
-				branches is known as intrahepatic cholangiocarcinoma (CCA). The second most common cause of primary
-				liver cancer is intrahepatic CCA.
-			</li>
-			<li>
-				<strong>Angiosarcoma and hemangiosarcoma</strong> <br />
-				These are rare and aggressive liver tumors, yet they are the third most prevalent, accounting
-				for 0.1-2.0% of all primary liver cancers. Angiosarcoma and hemangiosarcoma of the liver develop
-				from the blood vessel's endothelial layer. These tumors have bad outcomes because they grow quickly
-				and spread easily.
-			</li>
-			<li>
-				<strong>Hepatoblastoma</strong> <br />
-				Hepatoblastoma is a type of cancer caused by immature liver cells. It is a rare malignant tumor
-				that typically occurs in children, accounting for around 1% of all malignancies in children and
-				79% of all primary liver tumors under the age of fifteen.
-			</li>
-			<li>
-				<strong>Metastasis to liver </strong> <br />
-				Many malignancies seen in the liver are not real liver cancers, but rather cancers from other
-				parts of the body that have metastasized to the liver. Frequently, the site of genesis is the
-				digestive tract.
-			</li>
+			{/each}
 		</ol>
 	</div>
 </div>
@@ -109,7 +94,6 @@
 				<li>Liver fluke infection</li>
 			</ul>
 		</div>
-
 		<div class="causes-list-2">
 			<ul>
 				<li>Cirrhosis</li>
@@ -119,6 +103,7 @@
 				<li>Genetic conditions e.g. untreated hereditary hemochromatosis</li>
 			</ul>
 		</div>
+		
 	</div>
 </div>
 
@@ -133,16 +118,9 @@
 	<div>
 		<div class="treatment-info">
 			<div>
-				<h3>General Consideration:</h3>
-
+				<h3>{treatments[0].heading}</h3>
 				<p>
-					Treatment for liver cancer varies according to its particular form and stage, just like
-					with many other malignancies. The TNM staging systems serve as the primary basis for
-					cancer staging. Additionally, there are staging systems tailored to liver cancer, and each
-					one provides therapeutic options that could lead to a cure or prevention of cancer
-					recurrence. <br /> <br />
-					Surgery, medicine, and ablation techniques are used as treatments. For liver cancer, numerous
-					chemotherapy medications are also approved.
+					{@html convertNewlinesToBr(treatments[0].paragraph)}
 				</p>
 			</div>
 			<img src={general_consideration} alt="Doctor speaking to a patient" height="250" />
@@ -151,42 +129,18 @@
 		<div class="treatment-info">
 			<img src={hepatocellular_carcinoma} alt="Patient undergoing chemotherapy" height="250" />
 			<div>
-				<h3>Hepatocellular carcinoma</h3>
-
+				<h3>{treatments[1].heading}</h3>
 				<p>
-					For individuals with sufficient hepatic function reserve, the recommended treatment for
-					hepatocellular carcinoma (HCC) is partial surgical resection. Recurrence rates following
-					excision, however, can surpass 70%, whether as a result of the original tumor spreading or
-					developing new tumors. <br /> <br />
-					When a patient has HCC and the tumor satisfies certain requirements, liver transplantation
-					may also be an option (such as the Milan criteria). <br /> <br />
-					The only non-surgical treatment that can provide a cure is percutaneous ablation. Percutaneous
-					ablation can take many different forms. It can involve injecting substances like ethanol or
-					acetic acid into the liver or employing radio frequency ablation, microwaves, lasers, or cryotherapy
-					to produce dramatic temperature changes. <br /> <br />
-					Despite the possibility of using local chemotherapy during a process called transarterial chemoembolization
-					(TACE), systemic chemotherapy is not frequently employed in HCC. Treatment involves applying
-					medications to the tumor that stop blood flow and destroy cancer cells.
+					{@html convertNewlinesToBr(treatments[1].paragraph)}
 				</p>
 			</div>
 		</div>
 
 		<div class="treatment-info">
 			<div>
-				<h3>Intrahepatic cholangiocarcinoma</h3>
+				<h3>{treatments[2].heading}</h3>
 				<p>
-					Although resection is a possibility for cholangiocarcinoma, less than 30% of cases are
-					treatable at the time of diagnosis. Many intrahepatic cholangiocarcinomas have many focal
-					tumors within the liver, which makes surgical removal of the bulk of these tumors
-					impossible. Following surgery, up to 60% of cases return. <br /> <br />
-					In situations when partial resection is not a possibility, liver transplantation may be utilized;
-					in other cases, adjuvant chemotherapy and radiation may be beneficial. <br /> <br />
-					Since the perihilar area is where 60% of cholangiocarcinomas originate, photodynamic therapy
-					can prolong survival and enhance quality of life in these incurable cases. A new kind of treatment
-					called photodynamic therapy targets the tumor by using chemicals that are activated by light.
-					<br /> <br />
-					Cholangiocarcinoma instances that are incurable may occasionally be treated with systemic chemotherapy,
-					such as gemcitabine and cisplatin.
+					{@html convertNewlinesToBr(treatments[2].paragraph)}
 				</p>
 			</div>
 			<img
@@ -199,24 +153,18 @@
 		<div class="treatment-info">
 			<img src={hepatoblastoma} alt="Patient recieving treatment" height="250" />
 			<div>
-				<h3>Hepatoblastoma</h3>
+				<h3>{treatments[3].heading}</h3>
 				<p>
-					Hepatoblastoma can be treated by removing the tumor through surgical resection or liver
-					transplantation. Occasionally, surgery can provide a remedy. Chemotherapy can be applied
-					both prior to and following surgery or a transplant. <br /> <br />
-					Chemotherapy for systemic hepatoblastoma treatment include vincristine, cyclophosphamide, doxorubicin,
-					and cisplatin. Among these medications, cisplatin appears to be the most useful.
+					{@html convertNewlinesToBr(treatments[3].paragraph)}
 				</p>
 			</div>
 		</div>
 
 		<div class="treatment-info">
 			<div>
-				<h3>Angiosarcoma and hemangiosarcoma</h3>
+				<h3>{treatments[4].heading}</h3>
 				<p>
-					Ultimately, a large number of these cancers are incurable. One course of treatment is to
-					have the damaged liver sections surgically removed. Hemangiosarcomas and angiosarcomas of
-					the liver do not respond well to chemotherapy or liver transplantation.
+					{@html convertNewlinesToBr(treatments[4].paragraph)}
 				</p>
 			</div>
 			<img src={angiosarcoma_hemangiosarcoma} alt="Patient recieving treatment" height="250" />
@@ -393,5 +341,115 @@
 		color: red;
 		background-color: #fff;
 		font-size: 0.8em;
+	}
+
+	/* Mobile styles */
+	@media screen and (max-width: 600px) {
+		.header{
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: center;
+			padding: 20px;
+		}
+
+		.header img{
+			height: 240px;
+			width: fit-content;
+		}
+
+		.header h1{
+			font-size: 2.5em;
+			padding: 50px 0;
+		}
+
+		.info{
+			padding: 20px;
+		}
+
+		.info .nav{
+			display: none;
+		}
+
+		.liver-info{
+			display: flex;
+			flex-direction: column;
+			margin-top: 10px;
+		}
+
+		.what-is-liver-cancer{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 2em;
+		}
+
+		.what-is-liver-cancer h2{
+			font-size: 1.8em;
+		}
+
+		.liver-info h2{
+			font-size: 1.8em;
+		}
+
+		.liver-info ol{
+			width: 90%;
+		}
+
+		.causes {
+			padding: 20px;
+		}
+
+		.causes h2{
+			font-size: 1.8em;
+		}
+
+		.causes-list{
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			padding: 30px 0;
+		}
+
+		.causes-list-1, .causes-list-2{
+			margin: 0;
+			padding: 0;
+			margin-left: 4em;
+		}
+
+		.treatment{
+			padding: 20px;
+		}
+
+		.treatment h2{
+			font-size: 1.8em;
+		}
+
+		.treatment-info{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.treatment-info img{
+			height: 190px;
+			width: fit-content;
+			margin: 0;
+			margin: 1em 0;
+		}
+
+		.analysis{
+			padding: 20px;
+		}
+
+		.analysis h2{
+			font-size: 1.8em;
+		}
+
+		.disclaimer{
+			padding: 20px;
+		}
+
+		.disclaimer h1{
+			font-size: 1.7em;
+		}
 	}
 </style>
