@@ -55,7 +55,7 @@
 			<li><a href="/get-involved" on:click={closeNav}> Get Involved</a></li>
 			<li><a href="/partners" on:click={closeNav}>Our Partners</a></li>
 			<!-- <li><a href="/news"> News & Updates</a></li> -->
-			<li><a href="/contact" class="contact-btn"> Contact Us</a></li>
+			<li><a href="/contact" class="contact-btn" on:click={closeNav}> Contact Us</a></li>
 		</ul>
 	</nav>
 </header>
