@@ -63,7 +63,6 @@
         background-color: #80AF81;
         border: 1px solid #80AF81;
         font-size: 1em;
-
     }
 
     .contact-form textarea {
@@ -155,5 +154,13 @@
         .contact-form input, .contact-form textarea{
             width: 100%;
         } 
+
+        .contact-form input{
+            height: 30%;
+        }
+
+        .contact-form textarea{
+            height: 50%;
+        }
     }
 </style>
