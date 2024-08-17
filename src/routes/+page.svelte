@@ -46,7 +46,7 @@
 <style>
 	.hero {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 1fr 1.5fr;
 		padding: 50px 100px;
 	}
 
@@ -73,8 +73,9 @@
 	}
 
 	.hero img {
-		height: 350px;
+		max-width: 700px;
 		border-radius: 120px 20px 120px 20px;
+		margin: auto;
 	}
 
 	.hero-2 {
@@ -110,7 +111,7 @@
 	}
 
 	.imgs img {
-		height: 210px;
+		max-width: 350px;
 		padding: 0px 5px;
 		border-radius: 120px 20px 120px 20px;
 	}
@@ -131,11 +132,9 @@
 			/* text-align: left; */
 		}
 
-
 		.hero img{
 			/* text-align: center; */
 			margin-top: 3em;
-			height: 190px;
 			max-width: fit-content;
 		}
 
@@ -147,7 +146,8 @@
 		}
 
 		.imgs img{
-			height: 180px;
+			/* height: 180px; */
+			max-width: 380px;
 			/* padding: 10px 0px; */
 			margin: 10px 0px;
 		}

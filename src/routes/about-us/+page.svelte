@@ -91,7 +91,7 @@
 <style>
 	.about-heading {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		padding: 50px 100px;
 	}
 
@@ -105,7 +105,7 @@
 	}
 
 	.about-heading img {
-		height: 350px;
+		max-width: 600px;
 		border-radius: 120px 20px 120px 20px;
 	}
 
@@ -195,8 +195,7 @@
 
 		.about-heading img{
 			margin-top: 1em;
-			height: 200px;
-			width: fit-content;
+			max-width: fit-content;
 		}
 
 		.about-info {
