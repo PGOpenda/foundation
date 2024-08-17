@@ -17,6 +17,15 @@
         const sanitizedText = DOMPurify.sanitize(text.replace(/\n/g, '<br>'))
         return sanitizedText;
     }
+
+	import { onMount } from 'svelte';
+	import Popup from '$lib/components/Popup.svelte';
+	import { popupStore } from '$stores/popupStore';
+
+	onMount(() => {
+		popupStore.set(true);
+	});
+
 </script>
 
 <svelte:head>
@@ -31,6 +40,8 @@
 	</div>
 	<img src={liver_cancer_header} alt="a patient with a nurse" />
 </div>
+
+<!-- <Popup message = "discalimer"/> -->
 
 <div class="info">
 	<div class="nav">
@@ -207,7 +218,7 @@
 	}
 
 	.header img {
-		height: 350px;
+		max-width: 500px;
 		border-radius: 120px 20px 120px 20px;
 	}
 
@@ -275,6 +286,7 @@
 
 	.what-is-liver-cancer img {
 		margin: auto auto;
+		max-width: 350px;
 	}
 	.causes {
 		padding: 70px 100px;
@@ -328,6 +340,7 @@
 	.treatment-info img {
 		/* margin-left: 30px; */
 		margin: auto auto;
+		max-width: 400px;
 		border-radius: 120px 20px 120px 20px;
 	}
 
@@ -354,7 +367,7 @@
 
 		.header img{
 			height: 240px;
-			width: fit-content;
+			max-width: fit-content;
 		}
 
 		.header h1{

@@ -76,7 +76,7 @@
 	}
 
 	.heading img {
-		height: 350px;
+		max-width: 500px;
 		border-radius: 120px 20px 120px 20px;
 	}
 
@@ -104,7 +104,7 @@
 	}
 
 	.info-grid img {
-		height: 250px;
+		max-width: 400px;
 		border-radius: 120px 20px 120px 20px;
 		margin: auto;
 	}
@@ -136,8 +136,8 @@
 		}
 
 		.heading img{
-			height: 230px;
-			width: fit-content;
+			/* height: 230px; */
+			max-width: 370px;
 		}
 
 		.info{
@@ -160,9 +160,9 @@
 		}
 
 		.info-grid img{
-			height: 200px;
-			width: fit-content;
-			margin-top: 1em;
+			/* height: 200px; */
+			max-width: fit-content;
+			margin-top: 1.5em;
 		}
 
 	}

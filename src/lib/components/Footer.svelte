@@ -45,6 +45,10 @@
 		padding-top: 0px;
 	}
 
+	.footer-links img{
+		max-width: 48px;
+	}
+
 	.footer-end {
 		display: flex;
 		justify-content: space-between;

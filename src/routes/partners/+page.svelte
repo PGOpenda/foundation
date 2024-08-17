@@ -40,7 +40,7 @@
 	}
 
 	.heading img {
-		height: 330px;
+		max-width: 500px;
 		border-radius: 120px 20px 120px 20px;
 	}
 
@@ -70,8 +70,8 @@
 		}
 
 		.heading img{
-			height: 230px;
-			width: fit-content;
+			/* height: 230px; */
+			max-width: fit-content;
 		}
 
 		.partner-info {
