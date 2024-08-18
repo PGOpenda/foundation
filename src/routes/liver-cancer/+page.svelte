@@ -18,13 +18,7 @@
         return sanitizedText;
     }
 
-	import { onMount } from 'svelte';
 	import Popup from '$lib/components/Popup.svelte';
-	import { popupStore } from '$stores/popupStore';
-
-	onMount(() => {
-		popupStore.set(true);
-	});
 
 </script>
 
@@ -33,6 +27,8 @@
     <meta name="description" content="Learn about liver cancer, its causes, symptoms, treatments, and prevention strategies to help raise awareness and support for those affected.">
     <meta name="keywords" content="about liver cancer, liver cancer causes, liver cancer symptoms, liver cancer treatments, liver cancer prevention">
 </svelte:head>
+
+<Popup />
 
 <div class="header">
 	<div>
@@ -50,7 +46,6 @@
 			<li><a href="#causes" use:smoothScroll>Causes of Liver Cancer</a></li>
 			<li><a href="#treatment" use:smoothScroll>Treatment Options</a></li>
 			<li><a href="#analysis" use:smoothScroll>Analysis</a></li>
-			<li><a href="#disclaimer" use:smoothScroll>Disclaimer</a></li>
 		</ul>
 	</div>
 
@@ -196,15 +191,6 @@
 	</div>
 </div>
 
-<div class="disclaimer" id="disclaimer">
-	<h1>
-		DISCLAIMER: <br /> THE INFORMATION PROVIDED ON THIS SITE IS FOR INFORMATIONAL PURPOSES ONLY AND IS
-		NOT INTENDED AS A SUBSTITUTE FOR PROFESSIONAL MEDICAL ADVICE, DIAGNOSIS, OR TREATMENT. ALWAYS SEEK
-		THE ADVICE OF YOUR PHYSICIAN OR OTHER QUALIFIED HEALTH PROVIDER WITH ANY QUESTIONS YOU MAY HAVE REGARDING
-		A MEDICAL CONDITION.
-	</h1>
-</div>
-
 <style>
 	.header {
 		padding: 50px 100px;
@@ -230,7 +216,7 @@
 	.nav {
 		border: 1px solid black;
 		border-radius: 10px;
-		width: 80%;
+		width: 70%;
 		margin: 0 auto;
 	}
 
@@ -349,13 +335,6 @@
 		text-align: center;
 	}
 
-	.disclaimer {
-		padding: 50px 100px;
-		color: red;
-		background-color: #fff;
-		font-size: 0.8em;
-	}
-
 	/* Mobile styles */
 	@media screen and (max-width: 600px) {
 		.header{
@@ -457,12 +436,5 @@
 			font-size: 1.8em;
 		}
 
-		.disclaimer{
-			padding: 20px;
-		}
-
-		.disclaimer h1{
-			font-size: 1.7em;
-		}
 	}
 </style>
