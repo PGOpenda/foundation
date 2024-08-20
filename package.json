@@ -32,6 +32,7 @@
 	"type": "module",
 	"dependencies": {
 		"@vercel/speed-insights": "^1.0.12",
-		"dompurify": "^3.1.6"
+		"dompurify": "^3.1.6",
+		"svelte-inview": "^4.0.2"
 	}
 }

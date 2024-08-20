@@ -5,7 +5,6 @@
 	import img_car_2 from '$lib/assets/img-car-2.webp';
 	import img_car_3 from '$lib/assets/img-car-3.webp';
 	import faqData from '$lib/data/faq-data.json';
-	// import FadeIn from '$lib/components/FadeIn.svelte';
 </script>
 
 <svelte:head>
@@ -21,15 +20,15 @@
 		<a href="/about-us"> The Ben Kijuu Foundation</a>
 	</div>
 
-	<img src={hero_pic} alt="An old man with his daughter playing tennis" />
+	<img src={hero_pic} alt="An old man with his daughter playing tennis"/>
 </div>
 
-<div class="hero-2">
+<div class="hero-2" >
 	<h1>
 		<span>Welcome</span>
 	</h1>
 
-	<p>
+	<p >
 		The Ben Kijuu Foundation strives to provide support, education, and resources to those affected
 		by liver cancer and to fund research for better treatments and ultimately a cure
 	</p>
@@ -39,6 +38,12 @@
 	<img src={img_car_1} alt="A family taking a selfie together" />
 	<img src={img_car_2} alt="A patient getting instructions from a nurse" />
 	<img src={img_car_3} alt="A father with his daughter smiling" />
+</div>
+
+<div class="partners">
+	<h1>
+		<span>Our Partners</span>
+	</h1>
 </div>
 
 <FAQ {faqData} />
@@ -111,9 +116,24 @@
 	}
 
 	.imgs img {
-		max-width: 350px;
+		max-width: 340px;
 		padding: 0px 5px;
 		border-radius: 120px 20px 120px 20px;
+	}
+
+	.partners{
+		padding: 50px 100px;
+		background-color: #fff;
+		text-align: center;
+	}
+
+	.partners h1 {
+		font-size: 3em;
+		margin-bottom: 10px;
+	}
+
+	.partners span {
+		color: #1a5319;
 	}
 
 	@media screen and (max-width: 600px) {
@@ -164,6 +184,14 @@
 			max-width: fit-content;
 			font-size: 1em;
 			padding: 0 1.5em;
+		}
+
+		.partners{
+			padding: 20px;
+		}
+
+		.partners h1{
+			font-size: 2.1em;
 		}
 	}
 </style>
