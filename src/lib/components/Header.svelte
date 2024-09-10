@@ -33,7 +33,7 @@
 
 <header id="header" class:scrolled={isScrolled}>
 	<a href="/">
-		<img src="/Logo.svg" alt="Ben Kijuu Foundation" />
+		<img src="/Logo.png" alt="Ben Kijuu Foundation" />
 	</a>
 
 	<button class="nav-toggle" aria-label="Toggle navigation" on:click={toggleNav} >

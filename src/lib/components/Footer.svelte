@@ -1,102 +1,129 @@
 <footer>
-	<div class="footer-links">
-		<div>
-			<h3>Ben Kijuu Foundation&copy;</h3>
-		</div>
+	<div class="footer-section">
 		<div>
 			<a href="/">
-				<img src="/Logo-2.svg" alt="Liver Care Foundation" />
+				<img src="/Logo-2.png" alt="Ben Kijuu Foundation" class="logo"/>
 			</a>
+			
+			<h3>Ben Kijuu Foundation</h3>
+			<br> <br>
+
+			<h3>Follow Us</h3> 
+			<img src="/facebook.svg" alt="Facebook"class="social">
+			<img src="/instagram.svg" alt="Instagram"class="social">
+			<img src="/linkedin.svg" alt="LinkedIn"class="social">
+			<img src="/twitter.svg" alt="X"class="social">	
+		
 		</div>
 		<div>
-			<p>
-				Don't feel shy, reach out <br /><br />
-				<a href="/contact" class="contact-btn">Drop a message</a>
-			</p>
+			<form>
+				<h3>STAY UP TO DATE ON THE LATEST NEWS FROM THE BEN KIJUU FOUNDATION</h3>
+				<br>
+				<input type="text" placeholder="Your Email Address"> <br> <br>
+				<button class="submit" type="submit">Sign Up</button>
+			</form>
 		</div>
 	</div>
+	
+	<hr>
 	<div class="footer-end">
-		<div>
-			<p>&copy;2024 Copyright Ben Kijuu Foundation.</p>
-		</div>
-		<div class="terms">
+		<p>&copy 2024 Ben Kijuu Foundation. All rights reserved.</p>
+
+		<p>
+			<a href="/privacy-policy">Privacy Policy</a> | 
 			<a href="/terms-of-service">Terms of Service</a>
-			<a href="/privacy-policy">Privacy Policy</a>
-		</div>
+		</p>
+		
 	</div>
+
 </footer>
 
 <style>
-	.footer-links {
+	footer{
+		background-color: #1a5319;
+	}
+
+	.footer-section {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		text-align: center;
-		width: 90%;
-		padding: 30px 0px;
+		grid-template-columns: 1fr 1fr;
+		/* text-align: center; */
+		padding: 30px 70px;
 		margin-left: auto;
 		margin-right: auto;
+		background-color: #1a5319;
+		color: #fff;
 	}
 
-	.footer-links h3 {
-		padding-top: 40px;
+	.logo{
+		max-width: 65px;
 	}
 
-	.footer-links p {
-		padding-top: 0px;
+	.social{
+		max-width: 30px;
 	}
 
-	.footer-links img{
-		max-width: 48px;
+	.footer-section a{
+		color:#fff;
 	}
 
-	.footer-end {
+	form input[type=text] {
+		width: 45%;
+		height: 2.7rem;
+		background-color: #1a5319;
+		border: 1px solid #fff;
+		color: #fff;
+		padding: 0rem 0.8rem;
+		font-size: 1.4rem;
+		outline: none;
+		transition: ease 0.3s;
+	}
+
+	form input[type=text]:focus {
+		border: 1px solid #D6EFD8;
+	}
+
+
+	.submit {
+		padding: 0.6rem;
+		background-color: #D6EFD8;
+		outline: none;
+		border: 1px solid #D6EFD8;
+		border-radius: 3rem;
+		font-size: 1rem;
+
+	}
+
+	.submit:hover{
+		cursor: pointer;
+	}
+
+	.footer-end{
+		width: 90%;
+		margin: 0 auto;
+		color: #fff;
 		display: flex;
 		justify-content: space-between;
-		background-color: #1a5319;
-		padding: 10px 40px;
+		padding: 1rem 0rem;
+	}
+
+	hr{
 		color: #fff;
-		font-size: 14px;
-		font-weight: 500;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.footer-end a {
 		color: #fff;
-		text-decoration: none;
-		padding-right: 20px;
-	}
-
-	.contact-btn {
-		background-color: #1a5319;
-		border: 1px solid #1a5319;
-		color: #fff;
-		padding: 12px;
-		border-radius: 25px;
-	}
-
-	.contact-btn:hover {
-		background-color: #80af81;
-		border: 1px solid #80af81;
-		color: black;
-		transition: 500ms;
 	}
 
 	@media screen and (max-width: 600px) {
-		.footer-links{
+		.footer-section{
 			display: block;
 			padding: 30px 0;
 		}
 
-		.footer-links h3{
+		.footer-section h3{
 			padding-top: 0px;
-		}
-
-		.footer-end{
-			display: block;
-			padding: 10px;
-		}
-
-		.terms{
-			margin-top: 1em;
 		}
 	}
 </style>
