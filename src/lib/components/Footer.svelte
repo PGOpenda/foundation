@@ -4,44 +4,58 @@
 			<a href="/">
 				<img src="/Logo-2.png" alt="Ben Kijuu Foundation" class="logo"/>
 			</a>
-			<h3>Ben Kijuu Foundation &copy;</h3>
+			
+			<h3>Ben Kijuu Foundation</h3>
+			<br> <br>
 
+			<h3>Follow Us</h3> 
 			<img src="/facebook.svg" alt="Facebook"class="social">
 			<img src="/instagram.svg" alt="Instagram"class="social">
 			<img src="/linkedin.svg" alt="LinkedIn"class="social">
 			<img src="/twitter.svg" alt="X"class="social">	
-
-			<p>
-				<a href="/privacy-policy">Privacy Policy</a>
-				<a href="/terms-of-service">Terms of Service</a>
-			</p>
+		
 		</div>
 		<div>
-			<p>
-				Don't feel shy, reach out <br /><br />
-				<a href="/contact" class="contact-btn">Drop a message</a>
-			</p>
+			<form>
+				<h3>STAY UP TO DATE ON THE LATEST NEWS FROM THE BEN KIJUU FOUNDATION</h3>
+				<br>
+				<input type="text" placeholder="Your Email Address"> <br> <br>
+				<button class="submit" type="submit">Sign Up</button>
+			</form>
 		</div>
 	</div>
+	
+	<hr>
+	<div class="footer-end">
+		<p>&copy 2024 Ben Kijuu Foundation. All rights reserved.</p>
+
+		<p>
+			<a href="/privacy-policy">Privacy Policy</a> | 
+			<a href="/terms-of-service">Terms of Service</a>
+		</p>
+		
+	</div>
+
 </footer>
 
 <style>
-	.footer-section {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		text-align: center;
-		padding: 30px 0px;
-		margin-left: auto;
-		margin-right: auto;
+	footer{
 		background-color: #1a5319;
 	}
 
-	.footer-section h3 {
+	.footer-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		/* text-align: center; */
+		padding: 30px 70px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #1a5319;
 		color: #fff;
 	}
 
 	.logo{
-		max-width: 48px;
+		max-width: 65px;
 	}
 
 	.social{
@@ -52,23 +66,54 @@
 		color:#fff;
 	}
 
-	.footer-section p {
-		padding-top: 0px;
-	}
-
-	.contact-btn {
+	form input[type=text] {
+		width: 45%;
+		height: 2.7rem;
 		background-color: #1a5319;
-		border: 1px solid #1a5319;
+		border: 1px solid #fff;
 		color: #fff;
-		padding: 12px;
-		border-radius: 25px;
+		padding: 0rem 0.8rem;
+		font-size: 1.4rem;
+		outline: none;
+		transition: ease 0.3s;
 	}
 
-	.contact-btn:hover {
-		background-color: #80af81;
-		border: 1px solid #80af81;
-		color: black;
-		transition: 500ms;
+	form input[type=text]:focus {
+		border: 1px solid #D6EFD8;
+	}
+
+
+	.submit {
+		padding: 0.6rem;
+		background-color: #D6EFD8;
+		outline: none;
+		border: 1px solid #D6EFD8;
+		border-radius: 3rem;
+		font-size: 1rem;
+
+	}
+
+	.submit:hover{
+		cursor: pointer;
+	}
+
+	.footer-end{
+		width: 90%;
+		margin: 0 auto;
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem 0rem;
+	}
+
+	hr{
+		color: #fff;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.footer-end a {
+		color: #fff;
 	}
 
 	@media screen and (max-width: 600px) {
