@@ -1,12 +1,20 @@
 <footer>
-	<div class="footer-links">
-		<div>
-			<h3>Ben Kijuu Foundation&copy;</h3>
-		</div>
+	<div class="footer-section">
 		<div>
 			<a href="/">
-				<img src="/Logo-2.svg" alt="Liver Care Foundation" />
+				<img src="/Logo-2.png" alt="Ben Kijuu Foundation" class="logo"/>
 			</a>
+			<h3>Ben Kijuu Foundation &copy;</h3>
+
+			<img src="/facebook.svg" alt="Facebook"class="social">
+			<img src="/instagram.svg" alt="Instagram"class="social">
+			<img src="/linkedin.svg" alt="LinkedIn"class="social">
+			<img src="/twitter.svg" alt="X"class="social">	
+
+			<p>
+				<a href="/privacy-policy">Privacy Policy</a>
+				<a href="/terms-of-service">Terms of Service</a>
+			</p>
 		</div>
 		<div>
 			<p>
@@ -15,54 +23,37 @@
 			</p>
 		</div>
 	</div>
-	<div class="footer-end">
-		<div>
-			<p>&copy;2024 Copyright Ben Kijuu Foundation.</p>
-		</div>
-		<div class="terms">
-			<a href="/terms-of-service">Terms of Service</a>
-			<a href="/privacy-policy">Privacy Policy</a>
-		</div>
-	</div>
 </footer>
 
 <style>
-	.footer-links {
+	.footer-section {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		text-align: center;
-		width: 90%;
 		padding: 30px 0px;
 		margin-left: auto;
 		margin-right: auto;
+		background-color: #1a5319;
 	}
 
-	.footer-links h3 {
-		padding-top: 40px;
+	.footer-section h3 {
+		color: #fff;
 	}
 
-	.footer-links p {
-		padding-top: 0px;
-	}
-
-	.footer-links img{
+	.logo{
 		max-width: 48px;
 	}
 
-	.footer-end {
-		display: flex;
-		justify-content: space-between;
-		background-color: #1a5319;
-		padding: 10px 40px;
-		color: #fff;
-		font-size: 14px;
-		font-weight: 500;
+	.social{
+		max-width: 30px;
 	}
 
-	.footer-end a {
-		color: #fff;
-		text-decoration: none;
-		padding-right: 20px;
+	.footer-section a{
+		color:#fff;
+	}
+
+	.footer-section p {
+		padding-top: 0px;
 	}
 
 	.contact-btn {
@@ -81,22 +72,13 @@
 	}
 
 	@media screen and (max-width: 600px) {
-		.footer-links{
+		.footer-section{
 			display: block;
 			padding: 30px 0;
 		}
 
-		.footer-links h3{
+		.footer-section h3{
 			padding-top: 0px;
-		}
-
-		.footer-end{
-			display: block;
-			padding: 10px;
-		}
-
-		.terms{
-			margin-top: 1em;
 		}
 	}
 </style>
