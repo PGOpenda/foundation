@@ -15,6 +15,11 @@
 			<img src="/twitter.svg" alt="X"class="social">	
 		
 		</div>
+		<div class="contact">
+			<h3>Get in touch</h3> <br>
+
+			<a href="/contact">Contact page</a>
+		</div>
 		<div>
 			<form>
 				<h3>STAY UP TO DATE ON THE LATEST NEWS FROM THE BEN KIJUU FOUNDATION</h3>
@@ -45,7 +50,7 @@
 
 	.footer-section {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 		/* text-align: center; */
 		padding: 30px 70px;
 		margin-left: auto;
@@ -67,7 +72,7 @@
 	}
 
 	form input[type=text] {
-		width: 45%;
+		width: 80%;
 		height: 2.7rem;
 		background-color: #1a5319;
 		border: 1px solid #fff;
@@ -81,7 +86,6 @@
 	form input[type=text]:focus {
 		border: 1px solid #D6EFD8;
 	}
-
 
 	.submit {
 		padding: 0.6rem;
