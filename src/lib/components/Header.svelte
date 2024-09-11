@@ -55,7 +55,7 @@
 			<li><a href="/get-involved" on:click={closeNav}> Get Involved</a></li>
 			<li><a href="/partners" on:click={closeNav}>Our Partners</a></li>
 			<!-- <li><a href="/news"> News & Updates</a></li> -->
-			<li><a href="/contact" class="contact-btn" on:click={closeNav}> Contact Us</a></li>
+			<li><a href="/donate" class="donate-btn" on:click={closeNav}> DONATE</a></li>
 		</ul>
 	</nav>
 </header>
@@ -106,26 +106,25 @@
 		border-bottom: 1px solid #80af81;
 	}
 
-	.contact-btn {
+	.donate-btn {
 		background-color: #1a5319;
 		border: 1px solid #1a5319;
 		color: #fff;
-		padding: 12px;
-		border-radius: 25px;
+		padding: 1rem 2rem;
+		border-radius: 28px;
+		transition: ease 0.4s;
 	}
 
-	.contact-btn:hover {
+	.donate-btn:hover {
 		background-color: #80af81;
 		border: 1px solid #80af81;
 		color: black;
-		transition: 500ms;
 	}
 
 	header.scrolled {
 		background-color: white;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	}
-
 
 	/* Mobile design */
 	@media screen and (max-width: 600px) {
