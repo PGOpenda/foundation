@@ -159,12 +159,12 @@
 		border-radius: 10px;
 		background-color: #1a5319;
 		color: #fff;
+		transition: ease 0.4s;
 	}
 
 	.card:hover {
 		background-color: #80af81;
 		color: black;
-		transition: 500ms;
 	}
 
 	.card h3 {

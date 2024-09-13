@@ -37,7 +37,6 @@
 	<img src={liver_cancer_header} alt="a patient with a nurse" />
 </div>
 
-<!-- <Popup message = "discalimer"/> -->
 
 <div class="info">
 	<div class="nav">
