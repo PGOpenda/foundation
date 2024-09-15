@@ -18,7 +18,8 @@
 		<div class="contact">
 			<h3>Get in touch</h3> <br>
 
-			<a href="/contact">Contact page</a>
+			<p>+254 111 222 333</p>
+			<p>example@email.com</p>
 		</div>
 		<div>
 			<form>

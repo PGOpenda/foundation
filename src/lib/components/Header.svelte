@@ -52,9 +52,9 @@
 			<li><a href="/" on:click={closeNav}> Home </a></li>
 			<li><a href="/about-us" on:click={closeNav}> Who We Are</a></li>
 			<li><a href="/liver-cancer" on:click={closeNav}> About Liver Cancer</a></li>
-			<li><a href="/get-involved" on:click={closeNav}> Get Involved</a></li>
+			<li><a href="/our-journey" on:click={closeNav}>Our Journey</a></li>
+			<li><a href="/events" on:click={closeNav}> Events</a></li>
 			<li><a href="/partners" on:click={closeNav}>Our Partners</a></li>
-			<!-- <li><a href="/news"> News & Updates</a></li> -->
 			<li><a href="/donate" class="donate-btn" on:click={closeNav}> DONATE</a></li>
 		</ul>
 	</nav>
@@ -98,11 +98,11 @@
 		font-weight: 500;
 		color: #000;
 		text-align: center;
+		transition: ease 0.3s;
 	}
 
 	nav a:hover {
 		color: #80af81;
-		transition: 500ms;
 		border-bottom: 1px solid #80af81;
 	}
 

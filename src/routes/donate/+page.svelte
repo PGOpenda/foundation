@@ -43,4 +43,12 @@
         font-size: 1.5rem;
     }
 
+    .donations-heading img{
+		border-radius: 120px 20px 120px 20px;
+    }
+
+    .donations-info{
+        padding: 50px 100px;
+        background-color: white;
+    }
 </style>
