@@ -35,8 +35,8 @@
     }
 
     .journey-heading img{
-		border-radius: 120px 20px 120px 20px;
-        max-width: 500px;
+		border-radius: 120px 0px 0px 0px;
+        max-width: 600px;
     }
 
     .journey-info{

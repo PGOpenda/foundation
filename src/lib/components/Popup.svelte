@@ -61,8 +61,9 @@
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: #1a5319;
+    color: white;
+    border: 1px solid #000;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -78,6 +79,7 @@
     background: none;
     font-size: 2em;
     cursor: pointer;
+    color: white;
   }
 
   .popup h2{

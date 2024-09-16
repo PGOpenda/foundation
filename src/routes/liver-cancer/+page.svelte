@@ -1,7 +1,7 @@
 <script>
 // @ts-nocheck
 
-	import liver_cancer_header from '$lib/assets/liver-cancer.webp';
+	import liver_cancer_header from '$lib/assets/liver-cancer.jpg';
 	import liver_cancer_illustration from '$lib/assets/liver-cancer-illustration.webp';
 	import general_consideration from '$lib/assets/general-consideration.webp';
 	import hepatocellular_carcinoma from '$lib/assets/hepatocellula-carcinoma.webp';
@@ -204,7 +204,7 @@
 
 	.header img {
 		max-width: 500px;
-		border-radius: 120px 20px 120px 20px;
+		border-radius: 120px 0px 0px 0px;
 	}
 
 	.info {

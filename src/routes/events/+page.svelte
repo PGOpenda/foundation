@@ -1,8 +1,7 @@
 <script>
-	import get_involved from '$lib/assets/get-involved.webp';
+	import event from '$lib/assets/events.jpg';
 	import donate from '$lib/assets/donate.webp';
 	import volunteer from '$lib/assets/volunteer.webp';
-	import events from '$lib/assets/events.webp';
 </script>
 
 <svelte:head>
@@ -16,7 +15,7 @@
 		<h1>Get Involved</h1>
 	</div>
 
-	<img src={get_involved} alt="People volunteering" />
+	<img src={event} alt="People volunteering" />
 </div>
 
 <div class="info">
@@ -59,7 +58,7 @@
 				<button>Coming Soon</button>
 			</p>
 		</div>
-		<img src={events} alt="people gathered having a good time" />
+		<img src="" alt="people gathered having a good time" />
 	</div>
 </div>
 
@@ -72,12 +71,12 @@
 
 	.heading h1 {
 		font-size: 3.3em;
-		padding: 80px 0;
+		padding-top: 9rem;
 	}
 
 	.heading img {
-		max-width: 500px;
-		border-radius: 120px 20px 120px 20px;
+		max-width: 600px;
+		border-radius: 120px 0px 0px 0px;
 	}
 
 	.info {
@@ -105,7 +104,7 @@
 
 	.info-grid img {
 		max-width: 400px;
-		border-radius: 120px 20px 120px 20px;
+		border-radius: 120px 0px 0px 0px;
 		margin: auto;
 	}
 
