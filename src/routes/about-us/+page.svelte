@@ -1,5 +1,5 @@
 <script>
-	import who from '$lib/assets/who-we-are.webp';
+	import about_us from '$lib/assets/about-us.jpg';
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
 			Ben Kijuu <br />Foundation
 		</h1>
 	</div>
-	<img src={who} alt="people holding hands" />
+	<img src={about_us} alt="people holding hands" />
 </div>
 
 <div class="about-info">
@@ -97,7 +97,7 @@
 
 	.about-heading h3 {
 		font-size: 1.8em;
-		padding: 20px 0;
+		padding: 30px 0;
 	}
 
 	.about-heading h1 {
@@ -106,7 +106,7 @@
 
 	.about-heading img {
 		max-width: 600px;
-		border-radius: 120px 20px 120px 20px;
+		border-radius: 120px 0px 0px 0px;
 	}
 
 	.about-info {

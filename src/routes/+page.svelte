@@ -1,9 +1,9 @@
 <script>
 	import FAQ from '$lib/components/FAQ.svelte';
-	import hero_pic from '$lib/assets/hero-pic.webp';
-	import img_car_1 from '$lib/assets/img-car-1.webp';
-	import img_car_2 from '$lib/assets/img-car-2.webp';
-	import img_car_3 from '$lib/assets/img-car-3.webp';
+	import hero_pic from '$lib/assets/hero-pic.jpg';
+	import img_card_1 from '$lib/assets/img-card-1.jpg';
+	import img_card_2 from '$lib/assets/img-card-2.jpg';
+	import img_card_3 from '$lib/assets/img-card-3.jpg';
 	import faqData from '$lib/data/faq-data.json';
 </script>
 
@@ -15,7 +15,7 @@
 
 
 <div class="hero">
-	<div>
+	<div class="hero-info">
 		<h1>Fighting Liver Cancer Together: Hope, Research, Support</h1>
 		<a href="/about-us"> The Ben Kijuu Foundation</a>
 	</div>
@@ -35,9 +35,9 @@
 </div>
 
 <div class="imgs">
-	<img src={img_car_1} alt="A family taking a selfie together" />
-	<img src={img_car_2} alt="A patient getting instructions from a nurse" />
-	<img src={img_car_3} alt="A father with his daughter smiling" />
+	<img src={img_card_1} alt="A family taking a selfie together" />
+	<img src={img_card_2} alt="A patient getting instructions from a nurse" />
+	<img src={img_card_3} alt="A father with his daughter smiling" />
 </div>
 
 <div class="partners">
@@ -51,13 +51,18 @@
 <style>
 	.hero {
 		display: grid;
-		grid-template-columns: 1fr 1.5fr;
-		padding: 50px 100px;
+		grid-template-columns: 1fr 1fr;
+		padding-top: 50px;
+	}
+
+	.hero-info{
+		padding-top: 4rem;
+		padding-left: 4rem;
 	}
 
 	.hero h1 {
 		font-weight: 300;
-		font-size: 3.3em;
+		font-size: 3.5em;
 		padding-bottom: 25px;
 	}
 
@@ -66,8 +71,9 @@
 		color: #fff;
 		border: 1px solid #1a5319;
 		color: #fff;
-		padding: 12px;
+		padding: 13px;
 		border-radius: 25px;
+		font-size: 1.2rem;
 	}
 
 	.hero a:hover {
@@ -78,9 +84,9 @@
 	}
 
 	.hero img {
-		max-width: 700px;
-		border-radius: 120px 20px 120px 20px;
-		margin: auto;
+		max-width: 660px;
+		border-radius: 120px 0px 0px 0px;
+		margin-left: auto;
 	}
 
 	.hero-2 {
@@ -118,11 +124,11 @@
 	.imgs img {
 		max-width: 340px;
 		padding: 0px 5px;
-		border-radius: 120px 20px 120px 20px;
+		border-radius: 20px 20px 20px 20px;
 	}
 
-	.partners{
-		padding: 50px 100px;
+	.partners {
+		padding: 150px 100px;
 		background-color: #fff;
 		text-align: center;
 	}
