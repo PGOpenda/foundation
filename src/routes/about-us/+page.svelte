@@ -228,6 +228,10 @@
 			font-size: 1.7em;
 		}
 
+		.journey-section h2{
+			font-size: 2rem;
+		}
+
 		.about-cards{
 			padding: 20px;
 		}

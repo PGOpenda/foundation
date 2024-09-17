@@ -21,7 +21,7 @@
 			<p>+254 111 222 333</p>
 			<p>example@email.com</p>
 		</div>
-		<div>
+		<div class="form">
 			<form>
 				<h3>STAY UP TO DATE ON THE LATEST NEWS FROM THE BEN KIJUU FOUNDATION</h3>
 				<br>
@@ -124,11 +124,27 @@
 	@media screen and (max-width: 600px) {
 		.footer-section{
 			display: block;
-			padding: 30px 0;
+			padding: 20px 20px;
 		}
 
 		.footer-section h3{
 			padding-top: 0px;
+		}
+
+		.contact{
+			padding: 2rem 0rem;
+		}
+
+		.form{
+			padding-bottom: 1rem;
+		}
+
+		.footer-end{
+			display: block;
+		}
+
+		.footer-end p{
+			padding-bottom: 0.5rem;
 		}
 	}
 </style>

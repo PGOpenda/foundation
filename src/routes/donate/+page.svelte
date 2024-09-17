@@ -9,7 +9,7 @@
 </svelte:head>
 
 <div class="donations-heading">
-    <div>
+    <div class="info">
         <h1>
             Donate
         </h1>
@@ -51,5 +51,34 @@
     .donations-info{
         padding: 50px 100px;
         background-color: white;
+    }
+
+    /* Mobile Styles */
+    @media screen and (max-width: 600px) {
+        .donations-heading{
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 10px;
+			align-items: center;
+		}
+
+		.donations-heading h1{
+			font-size: 2.5em;
+			padding: 0px 0;
+		}
+
+        .donations-heading h3{
+            font-size: 1.3rem;
+        }
+
+        .info{
+            padding: 1.2rem 0rem;
+            text-align: center;
+        }
+
+		.donations-heading img{
+			/* height: 230px; */
+			max-width: 370px;
+		}
     }
 </style>

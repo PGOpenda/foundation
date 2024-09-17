@@ -145,8 +145,13 @@
 	@media screen and (max-width: 600px) {
 		.hero{
 			display: block;
-			padding: 20px;
-			text-align: center;
+			padding: 0px;
+			/* text-align: center; */
+		}
+
+		.hero-info{
+			padding: 1.5rem ;
+
 		}
 
 		.hero div{
@@ -155,11 +160,10 @@
 
 		.hero h1{
 			font-size: 2.5em;
-			/* text-align: left; */
+			text-align: left;
 		}
 
 		.hero img{
-			/* text-align: center; */
 			margin-top: 3em;
 			max-width: fit-content;
 		}
