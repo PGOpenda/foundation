@@ -2,7 +2,7 @@
 // @ts-nocheck
 
 	import liver_cancer_header from '$lib/assets/liver-cancer.jpg';
-	import liver_cancer_illustration from '$lib/assets/liver-cancer-illustration.webp';
+	import liver_cancer_illustration from '$lib/assets/liver-cancer-illustration.svg';
 	import general_consideration from '$lib/assets/general-consideration.webp';
 	import hepatocellular_carcinoma from '$lib/assets/hepatocellula-carcinoma.webp';
 	import intrahepatic_cholangiocarcinoma from '$lib/assets/Intrahepatic-cholangiocarcinoma.webp';
@@ -128,11 +128,11 @@
 					{@html convertNewlinesToBr(treatments[0].paragraph)}
 				</p>
 			</div>
-			<img src={general_consideration} alt="Doctor speaking to a patient" height="250" />
+			
 		</div>
 
 		<div class="treatment-info">
-			<img src={hepatocellular_carcinoma} alt="Patient undergoing chemotherapy" height="250" />
+			
 			<div>
 				<h3>{treatments[1].heading}</h3>
 				<p>
@@ -148,15 +148,11 @@
 					{@html convertNewlinesToBr(treatments[2].paragraph)}
 				</p>
 			</div>
-			<img
-				src={intrahepatic_cholangiocarcinoma}
-				alt="Patient getting diagnosis from two doctors"
-				height="250"
-			/>
+			
 		</div>
 
 		<div class="treatment-info">
-			<img src={hepatoblastoma} alt="Patient recieving treatment" height="250" />
+			
 			<div>
 				<h3>{treatments[3].heading}</h3>
 				<p>
@@ -172,7 +168,6 @@
 					{@html convertNewlinesToBr(treatments[4].paragraph)}
 				</p>
 			</div>
-			<img src={angiosarcoma_hemangiosarcoma} alt="Patient recieving treatment" height="250" />
 		</div>
 	</div>
 </div>
@@ -317,16 +312,10 @@
 	}
 
 	.treatment-info {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
 		margin-top: 60px;
-	}
-
-	.treatment-info img {
-		/* margin-left: 30px; */
-		margin: auto auto;
-		max-width: 400px;
-		border-radius: 120px 20px 120px 20px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.analysis {
@@ -418,13 +407,6 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-		}
-
-		.treatment-info img{
-			height: 190px;
-			width: fit-content;
-			margin: 0;
-			margin: 1em 0;
 		}
 
 		.analysis{

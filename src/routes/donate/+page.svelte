@@ -1,5 +1,5 @@
 <script>
-    import donations from '../../lib/assets/donations.jpg'
+    import donations from '../../lib/assets/donate.jpg'
 </script>
 
 <svelte:head>
@@ -44,7 +44,8 @@
     }
 
     .donations-heading img{
-		border-radius: 120px 20px 120px 20px;
+        max-width: 600px;
+		border-radius: 120px 0px 0px 0px;
     }
 
     .donations-info{

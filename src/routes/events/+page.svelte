@@ -71,7 +71,7 @@
 
 	.heading h1 {
 		font-size: 3.3em;
-		padding-top: 9rem;
+		padding-top: 80px;
 	}
 
 	.heading img {
