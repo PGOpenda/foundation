@@ -54,7 +54,7 @@
 			<li><a href="/liver-cancer" on:click={closeNav}> About Liver Cancer</a></li>
 			<li><a href="/our-journey" on:click={closeNav}>Our Journey</a></li>
 			<li><a href="/events" on:click={closeNav}> Events</a></li>
-			<li><a href="/partners" on:click={closeNav}>Our Partners</a></li>
+			<li><a href="/merchandise" on:click={closeNav}>Merchandise</a></li>
 			<li><a href="/donate" class="donate-btn" on:click={closeNav}> DONATE</a></li>
 		</ul>
 	</nav>
