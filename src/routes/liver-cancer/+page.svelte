@@ -3,11 +3,6 @@
 
 	import liver_cancer_header from '$lib/assets/liver-cancer.jpg';
 	import liver_cancer_illustration from '$lib/assets/liver-cancer-illustration.svg';
-	import general_consideration from '$lib/assets/general-consideration.webp';
-	import hepatocellular_carcinoma from '$lib/assets/hepatocellula-carcinoma.webp';
-	import intrahepatic_cholangiocarcinoma from '$lib/assets/Intrahepatic-cholangiocarcinoma.webp';
-	import hepatoblastoma from '$lib/assets/Hepatoblastoma.webp';
-	import angiosarcoma_hemangiosarcoma from '$lib/assets/Angiosarcoma-hemangiosarcoma.webp';
 	import { smoothScroll } from '$lib/actions/smoothScroll';
 	import classifications from '$lib/data/liver-classifications.json'
 	import treatments from '$lib/data/liver-treatments.json'

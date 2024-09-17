@@ -1,7 +1,5 @@
 <script>
 	import event from '$lib/assets/events.jpg';
-	import donate from '$lib/assets/donate.webp';
-	import volunteer from '$lib/assets/volunteer.webp';
 </script>
 
 <svelte:head>
