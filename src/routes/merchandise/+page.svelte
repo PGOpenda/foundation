@@ -43,4 +43,25 @@
         padding: 50px 100px;
         background-color: white;
     }
+
+    /* Mobile Styles */
+    @media screen and (max-width: 600px) {
+        .merch-heading{
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 10px;
+			align-items: center;
+		}
+
+		.merch-heading h1{
+			font-size: 2.5em;
+			text-align: left;
+			padding: 50px 0;
+		}
+
+		.merch-heading img{
+			/* height: 230px; */
+			max-width: 370px;
+		}
+    }
 </style>
