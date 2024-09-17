@@ -1,5 +1,6 @@
 <script>
 	import about_us from '$lib/assets/about-us.jpg';
+	import JourneyTimeline from '$lib/components/JourneyTimeline.svelte';
 </script>
 
 <svelte:head>
@@ -36,6 +37,11 @@
 		research, public education, and compassionate care, we are committed to reducing the impact of
 		liver cancer on individuals and society.
 	</p>
+</div>
+
+<div class="journey-section">
+	<h2> Our Journey</h2>
+	<JourneyTimeline />
 </div>
 
 <div class="about-cards">
@@ -132,6 +138,18 @@
 	.about-info p {
 		margin-bottom: 70px;
 		text-align: left;
+	}
+
+	.journey-section{
+		background-color: white;
+		padding: 3rem 0rem;
+	}
+
+	.journey-section h2{
+		text-align: center;
+		color: #1a5319;
+		padding-bottom: 3rem;
+		font-size: 2.5rem;
 	}
 
 	.about-cards {

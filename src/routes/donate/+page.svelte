@@ -1,5 +1,5 @@
 <script>
-    import donations from '../../lib/assets/donate.jpg'
+    import donations from '$lib/assets/donate.jpg'
 </script>
 
 <svelte:head>
