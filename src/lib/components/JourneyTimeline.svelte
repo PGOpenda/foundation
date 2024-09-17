@@ -52,7 +52,7 @@
       position: relative;
       max-width: 800px;
       min-height: 1000px;
-      margin: 50px auto;
+      margin: 0px auto;
       padding: 20px;
       background-color: #fff;
     }

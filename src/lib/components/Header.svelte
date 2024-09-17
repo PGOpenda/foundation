@@ -52,7 +52,7 @@
 			<li><a href="/" on:click={closeNav}> Home </a></li>
 			<li><a href="/about-us" on:click={closeNav}> Who We Are</a></li>
 			<li><a href="/liver-cancer" on:click={closeNav}> About Liver Cancer</a></li>
-			<li><a href="/our-journey" on:click={closeNav}>Our Journey</a></li>
+			<!-- <li><a href="/our-journey" on:click={closeNav}>Our Journey</a></li> -->
 			<li><a href="/events" on:click={closeNav}> Events</a></li>
 			<li><a href="/merchandise" on:click={closeNav}>Merchandise</a></li>
 			<li><a href="/donate" class="donate-btn" on:click={closeNav}> DONATE</a></li>
